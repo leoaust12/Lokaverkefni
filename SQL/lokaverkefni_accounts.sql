@@ -13,3 +13,4 @@ CREATE TABLE Accounts
     -- Optional
     -- You can edit this table if you want to.
 );
+
