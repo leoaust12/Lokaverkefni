@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* Font family for the whole website?? */
+}
+
+/* No need to modify this unless fixing it */
+
+.Top {
+    background-color: grey;
+    padding-top: 0px;
+    padding-left: 0.1cm;
+    padding-right: 0.1cm;
+    padding-bottom: 0.15cm;
+}
+
+/* For deving mode, the navbar is the greenyellow part of the top bar */
+
+.NavBar {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    padding-top: 10px;
+    margin-top: -10px;
+    background-color: greenyellow;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+form button {
+    border: none !important; /* This is will make it become an priority that there is NO borders */
+    background-color:#3498db ;/* Blue background color for the buttons*/
+    color: white; /* Text color, TEMP */
+    font-weight: 1000;
+    padding: 0.2cm;
+    width: 110px;
+    text-align: center;
+    align-items: center;
+    content: 5px; /* This is what inside the padding */
+    font-style: italic;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="is">
+    <head>
+        <title>Register your Account today! | SiteSpeak</title>
+        <link rel="stylesheet" href="../CSS/register.css">
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div class="Top">
+            <div class="NavBar">
+                <span id="Logo">
+                    <img src="hi.png" width="200px" height="100px" alt="This is not ready at the moment">
+                </span>
+                <span id="Title">
+                    <h1>SiteSpeak Registration</h1>
+                </span>
+                <span id="Bar">
+                    <!-- Interactive bar, when clicked they should 2 anchors appear and they can choose where to go instead -->
+                    <a href="./home.html">Home (for test purposes)</a>
+                </span>
+            </div>
+        </div>
+        <div class="Form">
+            <form method="post" action="../PHP/Server/confirmRegister.php">
+                <label>Insert Username</label>
+                <input id="Username">
+                <label>Insert Password</label>
+                <input id="Password" type="password">
+                <label>Insert Email Address</label>
+                <input id="Email" type="email">
+                <button>Register</button>
+            </form>
+        </div>
+        <div class="Bottom"></div>
+    </body>
+</html>
