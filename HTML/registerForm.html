@@ -4,6 +4,7 @@
         <title>Register your Account today! | SiteSpeak</title>
         <link rel="stylesheet" href="../CSS/register.css">
         <meta charset="UTF-8">
+        <link rel="icon" href="../Images/Logo_favicon.png">
     </head>
     <body>
         <div class="Top">
@@ -22,15 +23,26 @@
         </div>
         <div class="Form">
             <form method="post" action="../PHP/Server/confirmRegister.php">
-                <label>Insert Username</label>
-                <input id="Username">
-                <label>Insert Password</label>
-                <input id="Password" type="password">
-                <label>Insert Email Address</label>
-                <input id="Email" type="email">
+                <label class="Email">Insert Email Address</label>
+                <input id="Mail" type="email">
+                <label class="Username">Insert Username</label>
+                <input id="User">
+                <label class="Password">Insert Password</label>
+                <input id="Pass" type="password">
                 <button>Register</button>
             </form>
         </div>
-        <div class="Bottom"></div>
+        <div class="Bottom">
+            <div class="Information-Layer">
+                <span id="Code">
+                    <h2>Codespace</h2>
+                    <a href="https://github.com/leoaust12/Lokaverkefni">Github</a>
+                </span>
+                <span id="About_Us">
+                    <h2>About the creators</h2>
+                    <a href="">Creators</a>
+                </span>
+            </div>
+        </div>
     </body>
 </html>

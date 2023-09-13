@@ -35,6 +35,16 @@ form {
     flex-direction: column;
 }
 
+form input {
+    width: 300px;
+    height: 23.5px;
+}
+
+form label {
+    font-size: 18px;
+    padding-top: 25px;
+}
+
 form button {
     border: none !important; /* This is will make it become an priority that there is NO borders */
     background-color:#3498db ;/* Blue background color for the buttons*/
@@ -49,4 +59,27 @@ form button {
     margin-top: 10px;
     display: flex;
     justify-content: center;
+}
+
+/* Temp */
+
+#Pass {
+    border: 2.5px lightgray solid;
+    padding: 0.01cm;
+    background-color: blueviolet;
+    color: red;
+}
+
+#Mail {
+    border: 2.5px lightgray solid;
+    padding: 0.01cm;
+    background-color: aqua;
+    color: red;
+}
+
+#User {
+    border: 2.5px lightgray solid;
+    padding: 0.01cm;
+    background-color: cornsilk;
+    color: red;
 }
