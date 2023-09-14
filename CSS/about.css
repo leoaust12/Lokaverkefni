@@ -17,8 +17,25 @@ a {
     border-top-right-radius: 14px;
     height: 150px;
     background-color: beige;
-    display: flex;
-    flex-direction: row;
+    text-align: center;
+    align-items: center
 }
 
 /* Main CSS */
+
+@media only screen and (max-width: 426px) {
+    .Bottom {
+        height: 120px;
+        background-color: aqua;
+    }
+}
+
+@media only screen and (min-width: 427px) and (max-width: 768px) {
+    .Bottom {
+
+    }
+}
+
+@media only screen and (min-width: 769px) and (orientation: landscape){
+
+}

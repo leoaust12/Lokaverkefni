@@ -12,6 +12,7 @@ a {
 }
 
 .Bottom {
+    margin-top: 88px;
     border: solid 2px black;
     border-top-left-radius: 14px;
     border-top-right-radius: 14px;
