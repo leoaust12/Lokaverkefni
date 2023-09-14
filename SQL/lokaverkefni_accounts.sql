@@ -14,3 +14,4 @@ CREATE TABLE Accounts
     -- You can edit this table if you want to.
 );
 
+INSERT INTO Accounts [0, gummi, Hannes, Hallgrímsson, leoaustmannbaldursson@gmail.com, Canada]
