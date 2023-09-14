@@ -1,8 +1,22 @@
+/* Essential styles below */
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* Font family for the whole website?? */
+    font-family: "ui-sans-serif";
+}
+
+a {
+    text-decoration: none !important; /* Make this a priority to happen */
+}
+
+.Bottom {
+    border: solid 2px black;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    height: 150px;
+    background-color: beige;
 }
 
 /* No need to modify this unless fixing it */
@@ -54,7 +68,6 @@ form button {
     width: 110px;
     text-align: center;
     align-items: center;
-    content: 5px; /* This is what inside the padding */
     font-style: italic;
     margin-top: 10px;
     display: flex;
