@@ -12,7 +12,6 @@ a {
 }
 
 .Bottom {
-    margin-top: 88px;
     border: solid 2px black;
     border-top-left-radius: 14px;
     border-top-right-radius: 14px;
@@ -21,6 +20,12 @@ a {
 }
 
 /* No need to modify this unless fixing it */
+
+body {
+    background-image: url("../Images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .Top {
     background-color: grey;
@@ -48,6 +53,7 @@ form {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    color: white;
 }
 
 form input {
