@@ -14,6 +14,6 @@ if($_SESSION["loggedIn"] == false) {
     }
 }
 
-session_stop();
+session_destroy()
 ;?>
 <!-- Insert HTML later on -->

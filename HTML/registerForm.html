@@ -23,14 +23,38 @@
             </div>
         </div>
         <div class="Form">
+            <h2>Register today!</h2>
             <form method="post" action="../PHP/Server/confirmRegister.php">
-                <label class="Email">Insert Email Address</label>
-                <input id="Mail" type="email">
-                <label class="Username">Insert Username</label>
-                <input id="User">
-                <label class="Password">Insert Password</label>
-                <input id="Pass" type="password">
-                <button>Register</button>
+                <label for="Mail" class="Email">Insert Email Address</label>
+                <input name="Mail" placeholder="pro@pornhub.com" id="Mail" type="email">
+                <div class="Names">
+                    <span id="FirstNames">
+                        <label for="firstN" class="NameFirst">Name</label>
+                        <input id="firstN" name="FirstName" placeholder="Ben" type="text">
+                    </span>
+                    <span id="LastNames">
+                        <label for="lastN" class="NameLast">Last name</label>
+                        <input id="lastN" name="FirstName" placeholder="Dover" type="text">
+                    </span>
+                </div>
+                <!-- Username  -->
+                <label for="User" class="Username">Insert Username</label>
+                <input name="User" placeholder="EpicLover69420" type="text" id="User">
+                <!-- Password -->
+                <label for="Pass" class="Password">Insert Password</label>
+                <input name="Password" placeholder="password1" id="Pass" type="password">
+                <!-- Gender -->
+                <label for="gender" class="Gender">Define your gender</label>
+                <select id="gender" name="GenderSelection">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Transgender">Transgender</option>
+                    <option value="Other">None of the above / Not listed</option>
+                </select>
+                <div class="Buttons">
+                    <input type="reset" value="Reset">
+                    <button>Register</button>
+                </div>
             </form>
         </div>
         <div class="Bottom">

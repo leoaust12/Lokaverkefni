@@ -1,4 +1,5 @@
 /* Essential styles below */
+/* Reminder: ID works only with 1 item, class works with multiple */
 
 * {
     padding: 0;
@@ -17,6 +18,24 @@ a {
     border-top-right-radius: 14px;
     height: 150px;
     background-color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.Bottom #Code, #About_Us, #PDF {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+}
+
+.Bottom #Code a, #About_Us a, #PDF a {
+    color: blue; /* temp */
 }
 
 /* No need to modify this unless fixing it */
@@ -29,13 +48,10 @@ body {
 
 .Top {
     background-color: grey;
-    padding-top: 0px;
-    padding-left: 0.1cm;
-    padding-right: 0.1cm;
-    padding-bottom: 0.15cm;
+    padding: 0 0.1cm 0.15cm;
 }
 
-/* For deving mode, the navbar is the greenyellow part of the top bar */
+/* For development mode, the navbar is the greenyellow part of the top bar */
 
 .NavBar {
     display: flex;
@@ -44,62 +60,56 @@ body {
     text-align: center;
     align-items: center;
     padding-top: 10px;
-    margin-top: -10px;
+    margin-top: -10px; /* Do not modify the minus into a plus */
     background-color: greenyellow;
 }
 
-form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: white;
-}
-
-form input {
+input {
     width: 300px;
-    height: 23.5px;
-}
-
-form label {
-    font-size: 18px;
-    padding-top: 25px;
-}
-
-form button {
-    border: none !important; /* This is will make it become an priority that there is NO borders */
-    background-color:#3498db ;/* Blue background color for the buttons*/
-    color: white; /* Text color, TEMP */
-    font-weight: 1000;
-    padding: 0.2cm;
-    width: 110px;
+    height: 23px;
     text-align: center;
     align-items: center;
-    font-style: italic;
-    margin-top: 10px;
+}
+
+.Form {
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: green;
+    width: 20%;
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin: 2cm auto;
+    flex-direction: column;
 }
 
-/* Temp */
-
-#Pass {
-    border: 2.5px lightgray solid;
-    padding: 0.01cm;
-    background-color: blueviolet;
+.Form h2 {
+    margin-top: -10px;
+    margin-bottom: 10px;
     color: red;
+    font-style: oblique;
+    font-weight: bolder;
 }
 
-#Mail {
-    border: 2.5px lightgray solid;
-    padding: 0.01cm;
-    background-color: aqua;
-    color: red;
+.Form button {
+    background-color: #E55111; /* Light Orange (towards red */
+    border: 2px solid black;
+    padding: 10px;
+    margin: 9px auto -10px;
+    width: 125px;
+    height: 20px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: whitesmoke;
 }
 
-#User {
-    border: 2.5px lightgray solid;
-    padding: 0.01cm;
-    background-color: cornsilk;
-    color: red;
+.Form label {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
