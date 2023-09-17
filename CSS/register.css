@@ -108,8 +108,18 @@ input {
 }
 
 .Form label {
-    color: white;
+    color: darkgray;
+    font-style: italic;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#Reset {
+    margin-top: 4px;
+    border: black 2px solid;
+    width: 25%;
+    font-size: 18px;
+    text-align: center;
+    
 }

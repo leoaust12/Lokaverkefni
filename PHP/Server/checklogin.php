@@ -9,4 +9,8 @@
         $_SESSION["loggedIn"] = false;
         header("Location: login.php");
     }
+    // Incase of an error;
+
+    header("Location: login.php");
+    session_destroy();
 ;?>

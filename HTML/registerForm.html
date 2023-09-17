@@ -27,6 +27,7 @@
             <form method="post" action="../PHP/Server/confirmRegister.php">
                 <label for="Mail" class="Email">Insert Email Address</label>
                 <input name="Mail" placeholder="pro@pornhub.com" id="Mail" type="email">
+                <!-- Names -->
                 <div class="Names">
                     <span id="FirstNames">
                         <label for="firstN" class="NameFirst">Name</label>
@@ -43,6 +44,9 @@
                 <!-- Password -->
                 <label for="Pass" class="Password">Insert Password</label>
                 <input name="Password" placeholder="password1" id="Pass" type="password">
+                <!-- Repeat Password -->
+                <label for="rePass" class="RePass">Repeat the password</label>
+                <input name="RePass" placeholder="Repeat password" id="rePass" type="password">
                 <!-- Gender -->
                 <label for="gender" class="Gender">Define your gender</label>
                 <select id="gender" name="GenderSelection">
@@ -52,7 +56,7 @@
                     <option value="Other">None of the above / Not listed</option>
                 </select>
                 <div class="Buttons">
-                    <input type="reset" value="Reset">
+                    <input id="Reset" type="reset" value="Reset">
                     <button>Register</button>
                 </div>
             </form>
@@ -73,5 +77,8 @@
                 </span>
             </div>
         </div>
+    <script src="../Typescript/HideProjectsAndDeleteAfterNextProgress.ts">
+
+    </script>
     </body>
 </html>
