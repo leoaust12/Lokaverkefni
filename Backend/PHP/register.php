@@ -6,7 +6,7 @@ if(isset($_SESSION["user"])) {
     header("Location: index.php");
 }
 
-require_once "database.php"
+require_once "database.php";
 
 if(isset($_POST["submit"])) {
     $firstName = $_POST["FirstName"];
@@ -15,7 +15,7 @@ if(isset($_POST["submit"])) {
     $email = $_POST["Mail"];
     $password = $_POST["Password"];
     $passwordRepeat = $_POST["RePass"];
-    $gender = $_POST["GenderSelection"];
+    $gender = $_POST["GenderSelection"]; // Please do not cancel me, softies
     $errors = array();
 
     // Filter System
@@ -80,7 +80,7 @@ if(isset($_POST["submit"])) {
 </div>
 <div class="Form">
     <h2>Register today!</h2>
-    <form method="post" action="er.php">
+    <form method="post" action="">
         <label for="Mail" class="Email">Insert Email Address</label>
         <input name="Mail" placeholder="pro@pornhub.com" id="Mail" type="email">
         <!-- Names -->
