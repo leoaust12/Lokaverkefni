@@ -4,6 +4,7 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family: "Open Sans Condensed", monospace;
+    color: white;
 }
 
 #video {
@@ -14,4 +15,8 @@
     height: 100%;
     object-fit: cover;
     z-index: -1;
+}
+
+.Navigation {
+
 }

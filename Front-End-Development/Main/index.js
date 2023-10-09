@@ -3,14 +3,25 @@ import React from "react";
 
 function Header() {
     return(
-        <header>
-
-        </header>
+        <>
+            <nav className={"Navigation"}>
+                <img src="../../Images/Walter.png" />
+                <ul id={"item-lists"}>
+                    <li><a>About us</a></li>
+                    <li><a>Login in</a></li>
+                    <li><a>Codespace - GitHub</a></li>
+                </ul>
+            </nav>
+        </>
     )
 }
 
-const page = {
-    // Return a React Code
+function Page() {
+    return(
+        <div>
+            <Header />
+        </div>
+    )
 }
 
-ReactDOM.render(page, document.getElementById("root"))
+ReactDOM.render(<Page />, document.getElementById("root"))
