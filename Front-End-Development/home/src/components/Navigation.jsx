@@ -1,19 +1,38 @@
 import React from "react";
-import "../CSS/main.css";
+import "./CSS (Special)/nav.css";
 import image from "../assets/walter.png"
+import {Helmet} from "react-helmet";
+
+const title = "Welcome to SiteSpeak";
+
+class MyComponent extends React.PureComponent {
+    render () {
+        return(
+            <>
+                <Helmet>
+                    <title>{ title }</title>
+                </Helmet>
+            </>
+        )
+    }
+}
 
 const Bar = ( ) => {
     return(
-        <div>
+        <div className={"navigation"}>
             <nav id="Navbar">
                 <a href={"../../../home/src/App.js"} target="_BLANK"><img src={image} width="60px"/></a>
                 <a href={"xx"} target="_blank">Welcome to SiteSpeak</a>
-                <ul id="hiddenBars">
-                    <a target="_self" href="../../../xx"><li>About us</li></a>
-                    <a target="_blank" href="https://github.com/leoaust12/Lokaverkefni"><li>Codespace - Github</li></a>
-                    <a target="_self" href="../../../xx"><li>Sign up</li></a>
-                    <a target="_self" href="../../../log-in/src/App.js"><li>Log in</li></a>
-                </ul>
+                <div className={"Drops"}>
+                    <div className={"Dropdown"}>
+                        <button className={"DropdownButton"}>Dropdown</button>
+                        <div className={"dropdown-content"}>
+                            <a>Test 1</a>
+                            <a>Test 2</a>
+                            <a>Test 3</a>
+                        </div>
+                    </div>
+                </div>
             </nav>
         </div>
     )
