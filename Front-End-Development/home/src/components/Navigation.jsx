@@ -25,7 +25,7 @@ const Bar = ( ) => {
                 <a href={"xx"} target="_blank">Welcome to SiteSpeak</a>
                 <div className={"Drops"}>
                     <div className={"Dropdown"}>
-                        <button className={"DropdownButton"}>Dropdown</button>
+                        <button className={"DropdownButton"}></button>
                         <div className={"dropdown-content"}>
                             <a>Test 1</a>
                             <a>Test 2</a>
