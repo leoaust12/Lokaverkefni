@@ -22,10 +22,10 @@ const Bar = ( ) => {
         <div className={"navigation"}>
             <nav id="Navbar">
                 <a href={"../../../home/src/App.js"} target="_BLANK"><img src={image} width="60px"/></a>
-                <a href={"xx"} target="_blank">Welcome to SiteSpeak</a>
+                <h1 id={"Header"}>Welcome to SiteSpeak</h1>
                 <div className={"Drops"}>
                     <div className={"Dropdown"}>
-                        <button className={"DropdownButton"}></button>
+                        <button className={"DropdownButton"}><img alt={"Menu"} width={"20px"} height={"auto"} src={"https://static.thenounproject.com/png/5181333-200.png"} border={"0"} /></button>
                         <div className={"dropdown-content"}>
                             <a>Test 1</a>
                             <a>Test 2</a>
