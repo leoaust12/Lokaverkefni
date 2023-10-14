@@ -23,16 +23,10 @@ const Bar = ( ) => {
             <nav id="Navbar">
                 <a href={"../../../home/src/App.js"} target="_BLANK"><img src={image} width="60px"/></a>
                 <h1 id={"Header"}>Welcome to SiteSpeak</h1>
-                <div className={"Drops"}>
-                    <div className={"Dropdown"}>
-                        <button className={"DropdownButton"}><img alt={"Menu"} width={"20px"} height={"auto"} src={"https://static.thenounproject.com/png/5181333-200.png"} border={"0"} /></button>
-                        <div className={"dropdown-content"}>
-                            <a>Test 1</a>
-                            <a>Test 2</a>
-                            <a>Test 3</a>
-                        </div>
-                    </div>
-                </div>
+                <a>Log in</a>
+                <a>Sign up</a>
+                <a>About us</a>
+                <a >Codespace</a>
             </nav>
         </div>
     )
