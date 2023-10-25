@@ -9,18 +9,18 @@ create DATABASE Lokaverkefni (
        create TABLE Messages (
             MessageSenderUsername int,
             MessageSenderMessage varchar(255),
-            MessageRecieverUsername int,
-            MessageRecieverMessage varchar(255)
+            MessageReceiverUsername int,
+            MessageReceiverMessage varchar(255)
        )
         select * from Accounts; (
 
         )
        select * from Messages; (
-            where MessageSenderUsername < MessageRecieverUsername or not exists (
+            where MessageSenderUsername < MessageReceiverUsername or not exists (
                 select 1
                 from Messages Mesg
-                where Mesg.MessageRecieverUsername = Messages.MessageSenderUsername and
-                    Mesg.MessageSenderUsername = Messages.MessagerRecieverUsername (
+                where Mesg.MessageReceiverUsername = Messages.MessageSenderUsername and
+                    Mesg.MessageSenderUsername = Messages.MessageReceiverUsername (
 
                 )
             )
