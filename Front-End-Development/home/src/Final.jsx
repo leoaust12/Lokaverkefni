@@ -1,8 +1,8 @@
 // This is the file that will complie everything into one JSX.
 import React from "react";
-import Background_Video from "./components/Video.jsx";
-import Nav from "./components/Navigation.jsx";
-import Main from "./components/Video.jsx";
+import Background_Video from "./components/Core/Copy-Cores/Video.jsx";
+import Nav from "./components/Core/Copy-Cores/Navigation.jsx";
+import Main from "./components/Core/Copy-Cores/Video.jsx";
 import {Helmet} from "react-helmet";
 
 const title = "Welcome to SiteSpeak";

@@ -1,4 +1,4 @@
-
+import "./CSS/footer.css";
 
 function Content() {
     return(

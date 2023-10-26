@@ -3,20 +3,20 @@ import "../../CSS (Special)/nav.css";
 import {Helmet} from "react-helmet";
 import {Outlet, Link} from "react-router-dom"
 
+
+// Link work as a anchor but they only look for a file that is in the main depository.
 const Layout = ( ) => {
     return(
 
         <div>
             <nav>
-                <ul>
-                    <li>
-                        Hello World
-                    </li>
-                    <li>
-                        This is under construction still. :(
-                    </li>
-                </ul>
+                <Link to={"/"}>Home </Link>
+                <Link to={"/login"}>Login </Link>
+                <Link to={"/sign-up"}>Sign-up </Link>
+                <Link to={"/about"}>About us </Link>
+                <a href={"#"}>Github (not ready)</a>
             </nav>
+            <Outlet />
         </div>
     )
 }
