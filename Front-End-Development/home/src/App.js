@@ -1,3 +1,4 @@
+/*
 import React from "react";
 import "./CSS/main.css"; // CSS file
 import Final from "./Final";
@@ -12,3 +13,4 @@ function App() {
 }
 
 export default App;
+ */

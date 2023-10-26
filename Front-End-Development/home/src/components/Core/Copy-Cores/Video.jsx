@@ -1,6 +1,6 @@
 import React from "react";
-import "../CSS/main.css";
-import Video from "../assets/backgroundTest.mp4";
+import "./CSS/video.css";
+import Video from "../../../assets/backgroundTest.mp4";
 
 const Main = () => {
     return(
