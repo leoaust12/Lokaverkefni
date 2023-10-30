@@ -2,33 +2,22 @@ import React from "react";
 import "./CSS/Navigation.css";
 import {Helmet} from "react-helmet";
 import {Outlet, Link} from "react-router-dom"
+import Logo from "../../../assets/SiteSpeak.png"
 
 
 // Link work as an anchor, but they only look for a file that is in the main depository.
 const Layout = ( ) => {
     return(
         <div className={"navigation"}>
-            <h1>Welcome to SiteSpeak</h1>
+            <h1>Welcome to</h1>
+            <img alt={"logo of SiteSpeak"} width={"auto"} height={"50px"} src={Logo}/>
             <div className={"bar"}>
-                <span><img alt={"dropdown"} src={"../../../assets/walter.png"} /></span>
                 <nav>
-                    <ul>
-                        <li>
-                            <Link id={"Home"} to={"/"}>Home </Link>
-                        </li>
-                        <li>
-                            <Link id={"login"} to={"/login"}>Login </Link>
-                        </li>
-                        <li>
-                            <Link id={"sign-up"} to={"/sign-up"}>Sign-up </Link>
-                        </li>
-                        <li>
-                            <Link id={"about"} to={"/about"}>About us </Link>
-                        </li>
-                        <li>
-                            <a id={"github"} href={"#"}>Github (not ready)</a>
-                        </li>
-                    </ul>
+                    <Link id={"Home"} to={"/"}>Home </Link>
+                    <Link id={"login"} to={"/login"}>Login </Link>
+                    <Link id={"sign-up"} to={"/sign-up"}>Sign-up </Link>
+                    <Link id={"about"} to={"/about"}>About us </Link>
+                    <a id={"github"} href={"#"}>Github (not ready)</a>
                 </nav>
             </div>
 

@@ -3,8 +3,6 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Anchor } from "react-router-dom";
 import Final from "./Final";
 import Layout from "./components/Core/Copy-Cores/Navigation";
-import Footer from "./components/Core/Copy-Cores/Footer";
-import Item from "./components/content";
 
 function Content() {
     return(
@@ -18,7 +16,6 @@ function Complete() {
     return(
         <div>
             <Content />
-            <Footer />
         </div>
     )
 }

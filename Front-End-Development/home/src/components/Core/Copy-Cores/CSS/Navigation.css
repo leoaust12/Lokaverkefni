@@ -25,20 +25,8 @@
     padding: 10px;
     width: 20%;
     transition: all 0.5s;
-    right: 0;
-    position: absolute;
-}
-
-ul {
-    list-style-type: none;
-}
-
-li {
-    margin-bottom: 20px;
-}
-
-.bar {
-
+    margin-left: 2px;
+    margin-right: 2px;
 }
 
 #Home:hover, #login:hover, #sign-up:hover, #about:hover, #github:hover {
@@ -46,4 +34,5 @@ li {
     background-color: orangered;
     color: blue;
     transition: all 0.4s;
+    border-radius: 5px;
 }
