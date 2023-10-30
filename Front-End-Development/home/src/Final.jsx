@@ -1,9 +1,9 @@
 // This is the file that will complie everything into one JSX.
 import React from "react";
-import Background_Video from "./components/Core/Copy-Cores/Video.jsx";
-import Nav from "./components/Core/Copy-Cores/Navigation.jsx";
-import Main from "./components/Core/Copy-Cores/Video.jsx";
-import Content from "./components/Core/home";
+import Background_Video from "./components/Core/Video.jsx";
+import Nav from "./components/Core/Navigation.jsx";
+import Main from "./components/Core/Video.jsx";
+import Content from "./components/Home/home";
 
 
 const Final = () => {

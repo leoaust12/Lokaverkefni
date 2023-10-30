@@ -19,6 +19,7 @@ function Main() {
         <div>
             <Title />
             <div className={"Title"}>
+                <h1>Your are now at the Home Site</h1>
                 <h1>Welcome to SiteSpeak</h1>
                 <h2>Free to use communcation website</h2>
                 <img src={SiteSpeak} alt={"SiteSpeak"} width={"auto"} height={"100px"}/>

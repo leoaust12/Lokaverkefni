@@ -1,20 +1,10 @@
-import Nav from "./Copy-Cores/Navigation";
+import Nav from "../Core/Navigation";
 import {BrowserRouter as Anchor, Route, Router} from "react-router-dom";
 import "./Login.css";
 
-const Content = () => {
-    return(
-        <div>
-            <div>
-                <h1>SiteSpeak</h1>
-            </div>
-        </div>
-    )
-}
-
 const Form = () => {
     return(
-        <div>
+        <div className={"login"}>
             <h1>Login into your account</h1>
             <form>
                 <div className={"email"}>
