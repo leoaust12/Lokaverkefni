@@ -1,0 +1,16 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.bottom-border {
+    border: 2px black solid;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    padding: 20px;
+    width: 100vw;
+    text-align: center;
+    background-color: #83868Acc;
+}

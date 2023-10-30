@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: white; /* temp */
+}
+
+.navigation {
+    border: 1px black solid;;
+    text-align: center;
+    background-color: #0C4E99cc;
+}
+
+.navigation nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#Home, #login, #sign-up, #about, #github {
+    border: 1px lightgray solid;
+    background-color: darkgray;
+    color: black;
+    padding: 10px;
+    width: 20%;
+    transition: all 0.5s;
+    right: 0;
+    position: absolute;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin-bottom: 20px;
+}
+
+.bar {
+
+}
+
+#Home:hover, #login:hover, #sign-up:hover, #about:hover, #github:hover {
+    border: 2px lightcoral solid;
+    background-color: orangered;
+    color: blue;
+    transition: all 0.4s;
+}
