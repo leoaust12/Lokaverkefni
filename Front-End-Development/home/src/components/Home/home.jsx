@@ -1,6 +1,8 @@
 import React from "react";
 import SiteSpeak from "../../assets/SiteSpeak.png"
 import Helmet from "react-helmet"
+import "./Home.css"
+import Video from "../Core/Video";
 
 class Title extends React.Component {
     render() {
@@ -27,6 +29,7 @@ function Main() {
                     <b>Free Communcation website without the fear of government interferance.</b> Our goal here is to allow people to speak to another without being tracked by anyone or anywho.
                 </p>
             </div>
+            <Video />
         </div>
     )
 }

@@ -25,22 +25,15 @@ const Form = () => {
                     </label>
                     <input type={"password"} />
                 </div>
-                <button>
-                    Submit
-                </button>
+                <input
+                    type={"submit"}
+                    defaultValue={"login"}
+                    className={"SubmitButton"}
+                />
                 <input type={"reset"} id={"Reset-button"} />
             </form>
         </div>
     )
 }
 
-function Final() {
-    return(
-        <div>
-            <Content />
-            <Form />
-        </div>
-    )
-}
-
-export default Final;
+export default Form;
