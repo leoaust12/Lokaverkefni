@@ -28,14 +28,6 @@ function App() {
     )
 }
 
-// Temp!!
-
-function Home() {
-    return(
-        <h1>Hello, Home!</h1>
-    )
-}
-
 function About() {
     return(
         <h1>Hello, About!</h1>
