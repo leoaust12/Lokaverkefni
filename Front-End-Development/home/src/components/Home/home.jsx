@@ -1,37 +1,14 @@
-import React from "react";
-import SiteSpeak from "../../assets/SiteSpeak.png"
-import Helmet from "react-helmet"
-import "./Home.css"
-import Video from "../Core/Video";
+import "./home.css";
+import Img from "../../assets/SiteSpeak.png";
 
-class Title extends React.Component {
-    render() {
-        return(
-            <div>
-                <Helmet>
-                    <title>Home</title>
-                </Helmet>
-            </div>
-        )
-    }
-}
-
-function Main() {
+const Home = () => {
     return(
         <div>
-            <Title />
-            <div className={"Title"}>
-                <h1>Your are now at the Home Site</h1>
-                <h1>Welcome to SiteSpeak</h1>
-                <h2>Free to use communcation website</h2>
-                <img src={SiteSpeak} alt={"SiteSpeak"} width={"auto"} height={"100px"}/>
-                <p>
-                    <b>Free Communcation website without the fear of government interferance.</b> Our goal here is to allow people to speak to another without being tracked by anyone or anywho.
-                </p>
-            </div>
-            <Video />
+            <img src={Img} id="sitespeak" />
+            <h4 id="subtitle" >Empower your voice, preserve your privacy, connect freely</h4>
+            <h4 id="signup">Sign Up</h4>
         </div>
     )
 }
 
-export default Main;
+export default Home;
