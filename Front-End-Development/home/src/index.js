@@ -10,14 +10,11 @@ import Signup from "./components/Signup/signup";
 function App() {
     return(
         <Anchor>
-            <div>
                 <Link id={"homeLink"} to={"/"}>Home</Link>
                 <Link id={"aboutLink"} to={"/about"}>About</Link>
                 <Link id={"signupLink"} to={"/sign-up"}>Sign up</Link>
                 <Link id={"loginLink"} to={"/login"}>Login</Link>
                 <a id={"githubLink"} href={"#"}>GitHub</a>
-            </div>
-
             <Routes>
                 <Route path={"/"} element={<Content />}></Route>
                 <Route path={"/about"} element={<About />}></Route>
