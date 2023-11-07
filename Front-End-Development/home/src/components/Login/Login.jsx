@@ -1,7 +1,6 @@
 import Nav from "../Core/Navigation";
 import {BrowserRouter as Anchor, Route, Router} from "react-router-dom";
 import "./Login.css";
-import GoogleAuth from "../../Firebase Settings (back-end)/auth";
 
 const Form = () => {
     return(
@@ -33,7 +32,6 @@ const Form = () => {
                 />
                 <input type={"reset"} id={"Reset-button"} />
             </form>
-            <GoogleAuth />
         </div>
     )
 }
