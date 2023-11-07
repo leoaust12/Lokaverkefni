@@ -18,7 +18,7 @@
     justify-content: space-evenly;
 }
 
-#Home, #login, #sign-up, #about, #github {
+#Home, #login, #sign-up, #about {
     border: 1px lightgray solid;
     background-color: darkgray;
     color: black;
@@ -29,7 +29,7 @@
     margin-right: 2px;
 }
 
-#Home:hover, #login:hover, #sign-up:hover, #about:hover, #github:hover {
+#Home:hover, #login:hover, #sign-up:hover, #about:hover {
     border: 2px lightcoral solid;
     background-color: orangered;
     color: blue;
