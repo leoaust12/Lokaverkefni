@@ -7,7 +7,6 @@
 
 .Bar {
     background-color: blueviolet;
-    color: white;
     padding: 10px;
     width: 100%;
     font-size: xx-large;
@@ -16,3 +15,4 @@
     justify-content: space-evenly;
     border-radius: 10px;
 }
+
