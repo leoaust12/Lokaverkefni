@@ -1,5 +1,3 @@
-import Nav from "../Core/Navigation";
-import {BrowserRouter as Anchor, Route, Router} from "react-router-dom";
 import "./Login.css";
 
 const Form = () => {
