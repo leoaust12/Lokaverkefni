@@ -4,17 +4,21 @@ import { BrowserRouter as Anchor, Routes, Route, Link, Outlet } from "react-rout
 import Content from "./components/Home/home";
 import Login from "./components/Login/Login";
 import Signup from "./components/Signup/signup";
+import S from "./assets/S.png";
+import "./components/Core/CSS/index.css";
 
 // This is only temp, I am learning from a web developer.
 // The functions in App will not appear together. They'll be in their own files
 function App() {
     return(
         <Anchor>
-                <Link id={"homeLink"} to={"/"}>Home</Link>
-                <Link id={"aboutLink"} to={"/about"}>About</Link>
-                <Link id={"signupLink"} to={"/sign-up"}>Sign up</Link>
-                <Link id={"loginLink"} to={"/login"}>Login</Link>
-                <a id={"githubLink"} href={"#"}>GitHub</a>
+            <div className="Bar">
+                <Link id={"homeLink"} to={"/"}> <img alt={"logo"} src={S} width={"auto"} height={"50px"} /> </Link>
+                <Link id={"signupLink"} to={"/sign-up"}><strong>Signup</strong></Link>
+                <Link id={"loginLink"} to={"/login"}><strong>Login</strong></Link>
+                <Link id={"aboutLink"} to={"/about"}><strong>About</strong></Link>
+            </div>
+
             <Routes>
                 <Route path={"/"} element={<Content />}></Route>
                 <Route path={"/about"} element={<About />}></Route>
@@ -22,6 +26,14 @@ function App() {
                 <Route path={"/sign-up"} element={<Signup />}></Route>
             </Routes>
         </Anchor>
+    )
+}
+
+// Temp!!
+
+function Home() {
+    return(
+        <h1>Hello, Home!</h1>
     )
 }
 
