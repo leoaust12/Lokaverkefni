@@ -4,6 +4,7 @@ import { BrowserRouter as Anchor, Routes, Route, Link, Outlet } from "react-rout
 import Content from "./components/Home/home";
 import Login from "./components/Login/Login";
 import Signup from "./components/Signup/signup";
+import Info from "./components/About/about"
 import S from "./assets/S.png";
 import "./components/Core/CSS/index.css";
 
@@ -21,7 +22,7 @@ function App() {
 
             <Routes>
                 <Route path={"/"} element={<Content />}></Route>
-                <Route path={"/about"} element={<About />}></Route>
+                <Route path={"/about"} element={<Info />}></Route>
                 <Route path={"/login"} element={<Login />}></Route>
                 <Route path={"/sign-up"} element={<Signup />}></Route>
             </Routes>
@@ -29,19 +30,6 @@ function App() {
     )
 }
 
-// Temp!!
-
-function Home() {
-    return(
-        <h1>Hello, Home!</h1>
-    )
-}
-
-function About() {
-    return(
-        <h1>Hello, About!</h1>
-    )
-}
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

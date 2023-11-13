@@ -3,3 +3,11 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+#speak {
+    color: yellow;
+}
+
+#Site {
+    color: blue;
+}
