@@ -34,16 +34,16 @@
 /* Leó is working on this error */
 
 #signup {
-    display: inline-block;
-    margin-top: 90px;
-    margin-left: 700px;
-    padding: 15px 50px;
-    text-align: center;
-    color: white;
-    font-size: larger;
-    font-family:sans-serif;
     background-color: blueviolet;
-    border-radius: 20px;
+    color: white;
+    padding: 20px;
+    border-radius: 2cm;
+    text-align: center;
+    margin-left: auto;
+    width: 200px;
+    margin-right: auto;
+    font-size: 20px;
+    margin-top: 100px;
 }
 
 /* Fixing this aswell */

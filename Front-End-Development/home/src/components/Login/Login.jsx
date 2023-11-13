@@ -1,33 +1,46 @@
 import "./Login.css";
+import React, {useState} from "react";
+import { auth } from "../../Firebase_Settings/accountDatabase";
+import { signInWithEmailAndPassword  } from "firebase/auth";
 
 const Form = () => {
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    const signIn = (e) => {
+        e.preventDefault();
+        signInWithEmailAndPassword (auth, email, password).then((userCredential) => {
+            console.log(userCredential);
+        }).catch((error) => {
+            console.log(error);
+        })
+    }
     return(
         <div className={"login"}>
             <h1>Login into your account</h1>
-            <form>
+            <form onSubmit={signIn}>
                 <div className={"email"}>
                     <label htmlFor={"mail"}>
                         Insert Email Address:
                     </label>
-                    <input type={"email"} />
-                </div>
-                <div className={"user"}>
-                    <label htmlFor={"username"}>
-                        Insert Username:
-                    </label>
-                    <input type={"text"} />
+                    <input
+                        type={"email"}
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                    />
                 </div>
                 <div className={"pass"}>
                     <label htmlFor={"password"}>
                         Insert Password:
                     </label>
-                    <input type={"password"} />
+                    <input
+                        type={"password"}
+                        value={password}
+                        onChange={(e) => setPassword(e.target.value)}
+                    />
                 </div>
-                <input
-                    type={"submit"}
-                    defaultValue={"login"}
-                    className={"SubmitButton"}
-                />
+                <button className={"SubmitButton"}>
+                    Log in
+                </button>
                 <input type={"reset"} id={"Reset-button"} />
             </form>
         </div>
