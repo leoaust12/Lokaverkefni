@@ -12,8 +12,7 @@ const Layout = ( ) => {
             <h1>Welcome to</h1>
             <img alt={"logo of SiteSpeak"} width={"auto"} height={"50px"} src={Logo}/>
             <div className={"bar"}>
-                <Link to={"/"}>Home</Link>
-                <Link to={"/login"}>Login</Link>
+
             </div>
             <Outlet />
         </div>
