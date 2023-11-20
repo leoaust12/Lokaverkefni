@@ -1,6 +1,7 @@
 import Nav from "../Core/Navigation";
 import {BrowserRouter as Anchor, Route, Router} from "react-router-dom";
 import "./Login.css";
+import {Link} from "react-router-dom";
 
 const Form = () => {
     return(
@@ -25,11 +26,7 @@ const Form = () => {
                     </label>
                     <input type={"password"} />
                 </div>
-                <input
-                    type={"submit"}
-                    defaultValue={"login"}
-                    className={"SubmitButton"}
-                />
+                <Link target={"/message"}>Message</Link>
                 <input type={"reset"} id={"Reset-button"} />
             </form>
         </div>

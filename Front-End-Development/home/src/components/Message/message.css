@@ -1,0 +1,16 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans Condensed", monospace;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* CSS applied only this web */
+
