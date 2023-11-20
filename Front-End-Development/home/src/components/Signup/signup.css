@@ -2,6 +2,13 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
+}
+
+body {
+    background-color: black;
+    background-image: url("../../assets/starrysky.jpg");
+    background-size: cover;
 }
 
 #speak {
@@ -10,4 +17,37 @@
 
 #Site {
     color: rgb(4, 0, 176);
+}
+
+input[type="email"], input[type="text"], input[type="password"]{
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    font-size: 16px; 
+}
+
+.all h1, label {
+    color: white;
+    margin-bottom: 50px;
+}
+
+.all h1 {
+    font-size: 43px;
+}
+
+.mail, .user, .pass, .word{
+    margin-bottom: 15px;
+}
+
+.all {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+input[type="email"]:focus, input[type="text"]:focus, input[type="password"]:focus {
+    border-color: #007bff; 
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }

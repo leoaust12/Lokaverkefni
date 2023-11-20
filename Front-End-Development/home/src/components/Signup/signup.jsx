@@ -1,26 +1,25 @@
 import React from "react";
 import "./signup.css"
-import SiteSpeak from "../../assets/SiteSpeak.png";
 
 function Signup() {
     return(
-        <form>
+        <form className={"all"}>
             <h1>Join the Revolution at <span id="Site">Site</span><span id={"speak"}>Speak</span></h1>
             <div className={"mail"}>
-                <label htmlFor={"mail"}>Insert Email Address</label>
-                <input type={"email"} />
+                <label htmlFor={"mail"} >Enter your Email Address</label>
+                <input type={"email"} placeholder="Insert Email Addresss"/>
             </div>
             <div className={"user"}>
-                <label htmlFor={"username"}>Insert a Username</label>
-                <input />
+                <label htmlFor={"username"}>Create Username</label>
+                <input type={"text"} placeholder="Insert Username"/>
             </div>
-            <div>
-                <label>Insert a Password</label>
-                <input />
+            <div className={"pass"}>
+                <label htmlFor={"password"}>Create Password</label>
+                <input type={"password"} placeholder="Insert Password"/>
             </div>
-            <div>
-                <label>Reenter the password</label>
-                <input />
+            <div className={"word"}>
+                <label htmlFor={"reenter"}>Reenter Password</label>
+                <input type={"password"} placeholder={"Reenter Password"}/>
             </div>
             <input type={"submit"} />
         </form>
