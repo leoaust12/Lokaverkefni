@@ -30,7 +30,6 @@ const Form = () => {
                     defaultValue={"login"}
                     className={"SubmitButton"}
                 />
-                <input type={"reset"} id={"Reset-button"} />
             </form>
         </div>
     )
