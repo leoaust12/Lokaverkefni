@@ -1,6 +1,7 @@
 import Nav from "../Core/Navigation";
 import {BrowserRouter as Anchor, Route, Router} from "react-router-dom";
 import "./Login.css";
+import {Link} from "react-router-dom";
 
 const Form = () => {
     return(
@@ -8,28 +9,18 @@ const Form = () => {
             <h1>Login into your account</h1>
             <form>
                 <div className={"email"}>
-                    <label htmlFor={"mail"}>
-                        Insert Email Address:
-                    </label>
+                    <h2>Enter your Email Address</h2>
                     <input type={"email"} />
                 </div>
                 <div className={"user"}>
-                    <label htmlFor={"username"}>
-                        Insert Username:
-                    </label>
+                    <h2>Enter your Username</h2>
                     <input type={"text"} />
                 </div>
                 <div className={"pass"}>
-                    <label htmlFor={"password"}>
-                        Insert Password:
-                    </label>
+                    <h2>Enter your Password</h2>
                     <input type={"password"} />
                 </div>
-                <input
-                    type={"submit"}
-                    defaultValue={"login"}
-                    className={"SubmitButton"}
-                />
+                <Link target={"/message"}>Message</Link>
             </form>
         </div>
     )
