@@ -21,7 +21,10 @@ function Signup() {
                 <label htmlFor={"reenter"}>Reenter Password</label>
                 <input type={"password"} placeholder={"Reenter Password"}/>
             </div>
-            <input type={"submit"} />
+            <div className={"buttons"}>
+                <input type={"submit"} id={"submit-button"} />
+                <input type={"reset"} id={"reset-button"} />
+            </div>
         </form>
     )
 }
