@@ -3,3 +3,8 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+.about h3, h1{
+    color: white;
+}
+

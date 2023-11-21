@@ -1,8 +1,9 @@
 import drawing from "../../assets/drawing.png";
+import "./about.css";
 
 function About() {
     return(
-        <><div>
+        <><div className={"about"}>
             <h3>Sitespeak is a free to use, open source website dedicated to fast communications without censorship
 
                 Sitespeak is legally obligated to protect user data from third parties, making it one of the safest social media platforms in the world!
