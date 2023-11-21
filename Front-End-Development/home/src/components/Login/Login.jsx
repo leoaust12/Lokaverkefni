@@ -12,19 +12,19 @@ const Form = () => {
                     <label htmlFor={"mail"}>
                         Insert Email Address:
                     </label>
-                    <input type={"email"} />
+                    <input type={"email"} placeholder={"Insert email address"} />
                 </div>
                 <div className={"user"}>
                     <label htmlFor={"username"}>
                         Insert Username:
                     </label>
-                    <input type={"text"} />
+                    <input type={"text"} placeholder={"Insert username"} />
                 </div>
                 <div className={"pass"}>
                     <label htmlFor={"password"}>
                         Insert Password:
                     </label>
-                    <input type={"password"} />
+                    <input type={"password"} placeholder={"Insert password"} />
                 </div>
                 <div className={"buttons"}>
                     <input type={"submit"} id={"submit-button"} />

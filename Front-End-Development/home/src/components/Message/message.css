@@ -16,5 +16,40 @@ h1 {
     color: white;
 }
 
+#blue {
+    color: blue;
+}
+
+.leftBar {
+    position: fixed;
+    height: 100%;
+    width: 250px;
+    background-color: #007bff;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+.items {
+    margin-left: 250px;
+}
+
+li {
+    background-color: #8700FF;
+    width: 100%;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+li:hover {
+    background-color: orangered;
+    color: white;
+    transition: all 1s;
+}
+
+#create-demo {
+    
+}
+
 /* CSS applied only this web */
 
