@@ -6,7 +6,7 @@ import {Link} from "react-router-dom";
 const Form = () => {
     return(
         <div className={"login"}>
-            <h1>Login into your account</h1>
+            <h1 id={"advert"}>Login into your <span id={"blue"}>Site</span><span id={"yellow"}>Speak</span> account</h1>
             <form>
                 <div className={"email"}>
                     <label htmlFor={"mail"}>
@@ -26,8 +26,10 @@ const Form = () => {
                     </label>
                     <input type={"password"} />
                 </div>
-                <Link target={"/message"}>Message</Link>
-                <input type={"reset"} id={"Reset-button"} />
+                <div className={"buttons"}>
+                    <input type={"submit"} id={"submit-button"} />
+                    <input type={"reset"} id={"reset-button"} />
+                </div>
             </form>
         </div>
     )
