@@ -1,24 +1,24 @@
 import React from "react";
-import "./signup.css"
+import "./signup.css";
 
 function Signup() {
     return(
         <form className={"all"}>
             <h1>Join the Revolution at <span id="Site">Site</span><span id={"speak"}>Speak</span></h1>
             <div className={"mail"}>
-                <label htmlFor={"mail"} >Enter your Email Address</label>
+                <h2>Enter your Email Address</h2>
                 <input type={"email"} placeholder="Insert Email Addresss"/>
             </div>
             <div className={"user"}>
-                <label htmlFor={"username"}>Create Username</label>
+                <h2>Create Username</h2>
                 <input type={"text"} placeholder="Insert Username"/>
             </div>
             <div className={"pass"}>
-                <label htmlFor={"password"}>Create Password</label>
+                <h2>Enter Password</h2>
                 <input type={"password"} placeholder="Insert Password"/>
             </div>
             <div className={"word"}>
-                <label htmlFor={"reenter"}>Reenter Password</label>
+                <h2>Reenter Password</h2>
                 <input type={"password"} placeholder={"Reenter Password"}/>
             </div>
             <div className={"buttons"}>
