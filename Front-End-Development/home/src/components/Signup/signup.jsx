@@ -1,29 +1,34 @@
 import React from "react";
+import { useState } from 'react';
+import axios from 'axios';
 import "./signup.css";
 
-function Signup() {
+
+const Signup = () => {
+    const [username, setUsername] = useState('');
+    const [password, setPassword] = useState('');
+    const [message, setMessage] = useState('');
+  
+    const handleSignup = () => {
+      axios.post('http://localhost:5000/signup', { username, password })
+        .then((response) => setMessage(response.data.message))
+        .catch((error) => setMessage('Error signing up'));
+    };
+
     return(
         <form className={"all"}>
             <h1>Join the Revolution at <span id="Site">Site</span><span id={"speak"}>Speak</span></h1>
-            <div className={"mail"}>
-                <h2>Enter your Email Address</h2>
-                <input type={"email"} placeholder="Insert Email Addresss"/>
-            </div>
             <div className={"user"}>
                 <h2>Create Username</h2>
-                <input type={"text"} placeholder="Insert Username"/>
+                <input type="text" placeholder="Username"value={username} onChange={(e) => setUsername(e.target.value)} />
             </div>
             <div className={"pass"}>
                 <h2>Enter Password</h2>
-                <input type={"password"} placeholder="Insert Password"/>
-            </div>
-            <div className={"word"}>
-                <h2>Reenter Password</h2>
-                <input type={"password"} placeholder={"Reenter Password"}/>
+                <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} />
             </div>
             <div className={"buttons"}>
-                <input type={"submit"} id={"submit-button"} />
-                <input type={"reset"} id={"reset-button"} />
+                <button onClick={handleSignup}>Sign Up</button>
+                <p>{message}</p>
             </div>
         </form>
     )
