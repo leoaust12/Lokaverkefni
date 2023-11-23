@@ -52,19 +52,6 @@ input[type="email"]:focus, input[type="text"]:focus, input[type="password"]:focu
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
-<<<<<<< HEAD
-.all [type="submit"] {
-    background-color: blueviolet;
-    color: white;
-    padding: 20px;
-    border-radius: 2cm;
-    text-align: center;
-    margin-left: auto;
-    width: 200px;
-    margin-right: auto;
-    font-size: 20px;
-}
-=======
 .buttons {
     display: flex;
     justify-content: center;
@@ -73,24 +60,23 @@ input[type="email"]:focus, input[type="text"]:focus, input[type="password"]:focu
     flex-direction: row;
 }
 
-#submit-button, #reset-button {
+button {
     background-color: #5E00B1;
     color: white;
     padding: 10px;
     box-shadow: none;
     border: none;
     font-size: 20px;
-    width: 80px;
+    width: 100px;
     border-radius: 20px;
 }
 
-#reset-button {
-    margin-left: 10px;
-}
-
-#submit-button:hover, #reset-button:hover {
+button:hover {
     background-color: #8700FF;
     transition: all 1s;
     box-shadow: 2px 2px 2px rgb(0, 0, 0);
 }
->>>>>>> 490fa0fdba776340e0a3733eea6f44ef665567db
+
+p {
+    color: white;
+}
