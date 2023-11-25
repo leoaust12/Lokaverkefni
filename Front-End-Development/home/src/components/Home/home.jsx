@@ -3,11 +3,12 @@ import Img from "../../assets/SiteSpeak.png";
 import "../Core/CSS/video.css";
 import Video from "../../assets/backgroundTest.mp4";
 import {Link} from "react-router-dom";
+import NavBar from "../Core/bar";
 
 const Home = () => {
     return(
         <div>
-
+            <NavBar />
             <div className="content">
                 <video src={Video} playsInline autoPlay muted loop>
 

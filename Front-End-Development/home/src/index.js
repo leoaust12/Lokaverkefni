@@ -15,13 +15,6 @@ import "./components/Core/CSS/index.css";
 function App() {
     return(
         <Anchor>
-            <div className="Bar">
-                <Link id={"homeLink"} to={"/"}> <img alt={"logo"} src={S} width={"auto"} height={"50px"} /> </Link>
-                <Link id={"signupLink"} to={"/sign-up"}><strong>Signup</strong></Link>
-                <Link id={"loginLink"} to={"/login"}><strong>Login</strong></Link>
-                <Link id={"aboutLink"} to={"/about"}><strong>About</strong></Link>
-                <Link to={"/message"}><strong>message (temp)</strong></Link>
-            </div>
             <Routes>
                 <Route path={"/"} element={<Content />}></Route>
                 <Route path={"/about"} element={<Info />}></Route>

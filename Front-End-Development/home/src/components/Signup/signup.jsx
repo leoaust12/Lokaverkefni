@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from 'react';
 import axios from 'axios';
 import "./signup.css";
+import NavBar from "../Core/bar";
 
 
 const Signup = () => {
@@ -17,6 +18,7 @@ const Signup = () => {
 
     return (
         <form className={"all"}>
+            <NavBar />
             <h1>Join the Revolution at <span id="Site">Site</span><span id={"speak"}>Speak</span></h1>
             <div className={"user"}>
                 <h2>Create Username</h2>
@@ -28,7 +30,6 @@ const Signup = () => {
             </div>
             <div className={"buttons"}>
                 <button onClick={handleSignup}>Sign Up</button>
-                <p>{message}</p>
             </div>
         </form>
     )

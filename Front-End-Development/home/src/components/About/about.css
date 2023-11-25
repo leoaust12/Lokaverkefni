@@ -5,5 +5,22 @@
 }
 
 .content {
-    background-color: #8700FF; /* temp */
+    display: flex;
+    width: 40%;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    top: 0;
+    position: relative;
+}
+
+#about-Image {
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.content h3 {
+    color: white;
 }
