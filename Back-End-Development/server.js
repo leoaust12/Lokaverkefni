@@ -3,9 +3,10 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const mysql = require('mysql2');
 const path = require('path');
-
+const signupRouter = require('./routes/Signup');
 const app = express();
 const port = 5000;
+
 
 app.use(cors());
 app.use(bodyParser.json());
@@ -24,6 +25,8 @@ db.connect((err) => {
     console.log('Connected to MySQL');
   }
 });
+
+app.use('/signup', signupRouter);
 
 // User registration
 app.post('/signup', (req, res) => {

@@ -11,11 +11,11 @@ const Signup = () => {
   
     const handleSignup = () => {
       axios.post('http://localhost:5000/signup', { username, password })
-        .then((response) => setMessage(response.data.message))
-        .catch((error) => setMessage('Error signing up'));
+        .then((response) => setMessage(alert(response.data.message)))
+        .catch((error) => setMessage(alert('Error signing up')));
     };
 
-    return(
+    return (
         <form className={"all"}>
             <h1>Join the Revolution at <span id="Site">Site</span><span id={"speak"}>Speak</span></h1>
             <div className={"user"}>
