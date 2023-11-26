@@ -17,7 +17,7 @@ const pool = mysql.createPool({
 router.post('/', (req, res) => {
   const { username, password } = req.body;
 
-  // Check if the username already exists in the database
+  // Check if username already exists in the database
   pool.query('SELECT * FROM users WHERE username = ?', [username], (error, results) => {
     if (error) {
       console.error('Error checking existing username:', error);
@@ -28,7 +28,7 @@ router.post('/', (req, res) => {
       return res.status(400).json({ message: 'Username already exists' });
     }
 
-    // If the username is unique, insert the new user into the database
+    // If username is unique, insert new user into the database
     pool.query('INSERT INTO users (username, password) VALUES (?, ?)', [username, password], (error) => {
       if (error) {
         console.error('Error registering user:', error);

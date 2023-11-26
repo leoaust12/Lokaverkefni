@@ -60,7 +60,7 @@ input[type="email"]:focus, input[type="text"]:focus, input[type="password"]:focu
     flex-direction: row;
 }
 
-#signup-Button {
+Button {
     background-color: #5E00B1;
     color: white;
     padding: 10px;
@@ -71,7 +71,7 @@ input[type="email"]:focus, input[type="text"]:focus, input[type="password"]:focu
     border-radius: 20px;
 }
 
-#signup-Button:hover {
+Button:hover {
     background-color: #8700FF;
     transition: all 1s;
     box-shadow: 2px 2px 2px rgb(0, 0, 0);

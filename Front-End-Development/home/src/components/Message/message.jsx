@@ -1,7 +1,13 @@
 import React from "react";
 import "./message.css"
+import { useLocation } from 'react-router-dom';
 
-function Message() {
+
+
+const Message = () => {
+    const location = useLocation();
+    const { username } = location.state || {};
+      
     return(
         <div>
             <div className={"leftBar"}>
@@ -16,14 +22,11 @@ function Message() {
                     <li>Test7</li>
                 </ul>
                 <p id={"create-demo"}>
-                    Send a new Message
+                    Welcome, {username}!
                 </p>
             </div>
             <div className={"items"}>
-                <h1>This is only a demo</h1>
-                <h1>Items in this will be the messages displayed</h1>
-                <h1>While items in the nav bar are the people who you have sent messages to</h1>
-                <h1>Aswell as a "send messages" button</h1>
+                
             </div>
         </div>
     )
