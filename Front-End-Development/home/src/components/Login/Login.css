@@ -7,8 +7,84 @@
 
 body {
     font-family: Helvetica monospace;
+    background-image: none;
 }
 
-.Login {
-    color: blueviolet;
+/* Form */
+
+#yellow {
+    color: yellow;
+}
+
+#blue {
+    color: blue;
+}
+
+.login {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    color: white;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.login label {
+    font-size: 20px;
+    color: white;
+}
+
+#advert {
+    margin-bottom: 10px;
+}
+
+.user {
+    margin: 10px 0;
+}
+
+/* Input */
+
+.login input:focus {
+    background-color: #007bff;
+    transition: all 1s;
+    font-size: 20px;
+    width: 390px;
+}
+
+/* Buttons */
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+}
+
+#login-Button {
+    background-color: #5E00B1;
+    color: white;
+    padding: 10px;
+    box-shadow: none;
+    border: none;
+    font-size: 20px;
+    width: 80px;
+    border-radius: 20px;
+}
+
+#login-Button:hover {
+    background-color: #8700FF;
+    transition: all 1s;
+    box-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+
+p {
+    color: white;
 }

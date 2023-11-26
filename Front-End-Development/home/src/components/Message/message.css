@@ -1,0 +1,105 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans Condensed", monospace;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    color: white;
+}
+
+#blue {
+    color: blue;
+}
+
+.leftBar {
+    position: fixed;
+    height: 100%;
+    width: 250px;
+    background-color: #007bff;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+.items {
+    margin-left: 250px;
+}
+
+li {
+    background-color: #8700FF;
+    width: 100%;
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 2px;
+}
+
+li:hover {
+    background-color: orangered;
+    color: white;
+    transition: all 1s;
+}
+
+#create-demo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 20px;
+    border: 2px solid black;
+    background-color: #5E00B1;
+}
+
+/* CSS applied only this web */
+
+.leftBar {
+    position: fixed;
+    height: 100%;
+    width: 250px;
+    background-color: #007bff;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+.items {
+    margin-left: 250px;
+}
+
+li {
+    background-color: #8700FF;
+    width: 100%;
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 2px;
+}
+
+li:hover {
+    background-color: orangered;
+    color: white;
+    transition: all 1s;
+}
+
+#create-demo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 20px;
+    border: 2px solid black;
+    background-color: #5E00B1;
+}
+
+/* CSS applied only this web */

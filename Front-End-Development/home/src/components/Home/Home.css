@@ -34,16 +34,27 @@
 /* Leó is working on this error */
 
 #signup {
-    background-color: blueviolet;
+    display: flex;
     color: white;
-    padding: 20px;
-    border-radius: 2cm;
+    flex-direction: row;
+    flex: 1;
+    background-color: #8700FF;
+    padding: 25px;
     text-align: center;
+    justify-content: center;
     margin-left: auto;
-    width: 200px;
     margin-right: auto;
-    font-size: 20px;
-    margin-top: 100px;
+    width: 6cm;
+    border-radius: 1cm;
+    font-size: 24px;
+    margin-top: 80px;
+}
+
+#signup:hover {
+    box-shadow: 5px 5px 5px rgb(0, 0, 0);
+    transition: 1s;
+    background-color: #5E00B1;
+    border: black solid 1px;
 }
 
 /* Fixing this aswell */
