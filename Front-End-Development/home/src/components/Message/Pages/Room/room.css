@@ -10,3 +10,11 @@
     align-items: center;
     background-color: #007bff;
 }
+
+.message-footer small {
+    color: white !important;
+}
+
+.message-body span {
+    color: white !important;
+}

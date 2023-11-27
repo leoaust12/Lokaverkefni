@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
 import {COLLECTION_ID_MESSAGES, DATABASE_ID, databases} from "../../../../appwriteconfiguration";
-import {ID} from "appwrite";
+import { ID, Query } from "appwrite";
 import "./room.css"
 import message from "../../message";
 
@@ -29,13 +29,20 @@ const Room = () => {
 
         console.log("Created: ", response)
 
-        setMessageBody(prevState => [response, ...message]);
+
 
         setMessageBody("");
     }
 
     const getMessages = async () => {
-        const Response = await databases.listDocuments(DATABASE_ID, COLLECTION_ID_MESSAGES);
+        const Response = await databases.listDocuments(
+            DATABASE_ID,
+            COLLECTION_ID_MESSAGES,
+            [
+                Query.orderDesc("$createdAt"),
+                // Query.limit(2)
+            ]
+        );
         console.log("RESPONSE:", Response);
         setMessages(Response.documents)
     }
@@ -49,7 +56,7 @@ const Room = () => {
                         <textarea
                             required
                             maxLength="400"
-                            placeholder="Hi, Joe."
+                            placeholder="Insert a message"
                             onChange={(e) => {setMessageBody(e.target.value)}}
                             value={messageBody}>
                         </textarea>
