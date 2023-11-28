@@ -4,20 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92e45e26-1afe-4c41-93db-869e7c149947" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Front-End-Development/home/src/assets/GoogleLogo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Front-End-Development/home/src/components/About/about.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Front-End-Development/home/src/components/About/about.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Front-End-Development/home/src/components/Login/Login.css" beforeDir="false" afterPath="$PROJECT_DIR$/Front-End-Development/home/src/components/Login/Login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Front-End-Development/home/src/components/Login/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Front-End-Development/home/src/components/Login/Login.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Front-End-Development/home/src/components/Message/Pages/Room/Room.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Front-End-Development/home/src/components/Message/Pages/Room/Room.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Front-End-Development/home/src/components/Message/Pages/Room/room.css" beforeDir="false" afterPath="$PROJECT_DIR$/Front-End-Development/home/src/components/Message/Pages/Room/room.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Front-End-Development/home/src/components/Signup/signup.css" beforeDir="false" afterPath="$PROJECT_DIR$/Front-End-Development/home/src/components/Signup/signup.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Front-End-Development/home/src/components/Signup/signup.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Front-End-Development/home/src/components/Signup/signup.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Front-End-Development/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Front-End-Development/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Front-End-Development/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Front-End-Development/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Front-End-Development/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Front-End-Development/package.json" afterDir="false" />
-    </list>
+    <list default="true" id="92e45e26-1afe-4c41-93db-869e7c149947" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,6 +17,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -47,24 +35,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "chat",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "advanced.settings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;chat&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\2312052170\Documents\Lokaverkefni\Front-End-Development\home\src\utility" />
       <recent name="C:\Users\Notandi\Documents\GitHub\Lokaverkefni-Chat-App-1\Front-End-Development\home\src\components\Message\Pages\Room" />
     </key>
   </component>
@@ -79,6 +68,8 @@
       <workItem from="1701044073174" duration="4727000" />
       <workItem from="1701081260041" duration="1902000" />
       <workItem from="1701086639260" duration="2585000" />
+      <workItem from="1701172651890" duration="325000" />
+      <workItem from="1701173278789" duration="2682000" />
     </task>
     <servers />
   </component>

@@ -3,7 +3,6 @@ import client, {COLLECTION_ID_MESSAGES, DATABASE_ID, databases} from "../../../.
 import { ID, Query } from "appwrite";
 import "./room.css"
 import {Trash2} from "react-feather";
-import message from "../../message";
 
 const Room = () => {
 
@@ -33,6 +32,7 @@ const Room = () => {
             }
         })
         return () => {
+            // This will prevent a strange bug that will do the action twice. Send out twice or delete and resend twice.
             unsubscribe();
         }
     }, []);
@@ -108,8 +108,9 @@ const Room = () => {
                         </div>
                     ))}
                 </div>
-                <form onSubmit={handleNewMessages} id={"message-form"}>
-                    <div>
+                <div className={"textbox"}>
+                    <form onSubmit={handleNewMessages} id={"message-form"}>
+                        <div>
                         <textarea
                             required
                             maxLength="400"
@@ -117,11 +118,13 @@ const Room = () => {
                             onChange={(e) => {setMessageBody(e.target.value)}}
                             value={messageBody}>
                         </textarea>
-                    </div>
-                    <div className={"buttons_rooms"}>
-                        <input id={"Submit-Button-Message"} type={"submit"} value={"Send"} />
-                    </div>
-            </form>
+                        </div>
+                        <div className={"buttons_rooms"}>
+                            <input id={"Submit-Button-Message"} type={"submit"} value={"Send"} />
+                        </div>
+                    </form>
+                </div>
+
                 <div>
 
                 </div>
