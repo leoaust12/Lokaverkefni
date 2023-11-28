@@ -49,7 +49,7 @@ const Room = () => {
                         <textarea
                             required
                             maxLength="400"
-                            placeholder="Hi, Joe."
+                            placeholder="Speak"
                             onChange={(e) => {setMessageBody(e.target.value)}}
                             value={messageBody}>
                         </textarea>
