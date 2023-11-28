@@ -5,10 +5,10 @@
     
 }
 
-body {
-    background-color: black;
+.signup-container {
     background-image: url("../../assets/starrysky.jpg");
-    background-size: cover;
+    height: 100vh;
+    background-position: center;
 }
 
 #speak {

@@ -10,6 +10,11 @@ body {
     background-image: none;
 }
 
+.login-container {
+    background-image: url("../../assets/starrysky.jpg");
+    height: 100vh;
+    background-position: center;}
+
 /* Form */
 
 #yellow {
