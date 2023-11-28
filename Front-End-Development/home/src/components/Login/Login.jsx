@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from "react";
-import axios from "axios";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import "./Login.css";
 import NavBar from "../Core/bar";
 import {useAuth} from "../../utility/AuthContext";
@@ -17,7 +16,7 @@ const Form = () => {
 
     useEffect(() => {
         if(user) {
-            navigate("/")
+            navigate("/message")
         }
     }, []);
 
@@ -58,12 +57,12 @@ const Form = () => {
                         />
                     </div>
                     <div className={"field-wrap"}>
-                        <input className={"login-submit"} type={"submit"} value={"Login"} />
+                        <input id={"sign-up-button--login"} className={"login-submit"} type={"submit"} value={"Login"} />
                     </div>
                 </form>
+                <p id={"sign-up-link-button--login"}>Don't have an account? Why not register <Link id={"sign-up-link-button--login-ROUTER"} to={"/sign-up"}>Here</Link></p>
             </div>
         </div>
-
     )
 }
 

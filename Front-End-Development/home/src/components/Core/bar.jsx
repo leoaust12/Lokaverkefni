@@ -15,7 +15,6 @@ const NavBar = () => {
                 <Link id={"signupLink"} to={"/sign-up"}><strong>Signup</strong></Link>
                 <Link id={"loginLink"} to={"/login"}><strong>Login</strong></Link>
                 <Link id={"aboutLink"} to={"/about"}><strong>About</strong></Link>
-                <Link to={"/message"}><strong>message (temp)</strong></Link>
             </div>
     )
 }

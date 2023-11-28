@@ -11,6 +11,10 @@
     background-position: center;
 }
 
+.signup-form form {
+    margin-top: 100px;
+}
+
 #speak {
     color: yellow;
 }
@@ -19,12 +23,29 @@
     color: rgb(4, 0, 176);
 }
 
+.field-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.field-wrap label {
+    color: white;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+#link_wrap {
+    color: cadetblue;
+}
+
 input[type="email"], input[type="text"], input[type="password"]{
     border: 1px solid #ccc;
     border-radius: 10px;
     padding: 10px;
     width: 300px;
-    font-size: 16px; 
+    font-size: 16px;
 }
 
 .all h1, h2 {
@@ -50,33 +71,3 @@ input[type="email"]:focus, input[type="text"]:focus, input[type="password"]:focu
     border-color: #007bff; 
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
-
-.buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: row;
-}
-
-Button {
-    background-color: #5E00B1;
-    color: white;
-    padding: 10px;
-    box-shadow: none;
-    border: none;
-    font-size: 20px;
-    width: 100px;
-    border-radius: 20px;
-}
-
-Button:hover {
-    background-color: #8700FF;
-    transition: all 1s;
-    box-shadow: 2px 2px 2px rgb(0, 0, 0);
-}
-
-p {
-    color: white;
-}
-

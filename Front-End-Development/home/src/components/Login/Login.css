@@ -39,6 +39,7 @@ form {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    align-items: center;
 }
 
 .login label {
@@ -73,21 +74,43 @@ form {
     flex-direction: row;
 }
 
-#login-Button {
+#sign-up-button--login {
     background-color: #5E00B1;
     color: white;
-    padding: 10px;
+    padding: 15px;
     box-shadow: none;
     border: none;
     font-size: 20px;
-    width: 80px;
+    width: 120px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-align: center;
     border-radius: 20px;
 }
 
-#login-Button:hover {
+#sign-up-button--login:hover {
     background-color: #8700FF;
     transition: all 1s;
     box-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+
+#sign-up-link-button--login {
+    font-size: 20px;
+    background-color: #39007E;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+#sign-up-link-button--login-ROUTER {
+    text-decoration: underline;
+    color: cadetblue;
+    text-decoration-color: cadetblue;
+}
+
+#sign-up-link-button--login-ROUTER:hover {
+    color: #DAF66E;
+    transition: all 1s;
 }
 
 p {

@@ -4,20 +4,20 @@
     box-sizing: border-box;
 }
 
-textarea {
-    resize: none !important; /* This will prevent them being able to change the size of the text box. */
-    width: 400px;
-    height: 75px;
-    border-radius: 10px;
-    justify-content: left;
-    display: flex;
-    align-items: flex-start;
+#room-submit {
+    background-color: #007bff;
+}
+
+.container {
+    background-image: url("../../../../assets/starrysky.jpg");
+    height: 100vh;
+    background-position: center;
 }
 
 .textbox {
     position: fixed !important;
     bottom: 0;
-    left: 20cm;
+    left: 40%;
     right: auto;
     display: flex;
     justify-content: center;
@@ -41,31 +41,71 @@ textarea {
     text-align: center;
 }
 
+
 .message-footer small {
     color: black !important;
 }
 
+.message-footer {
+    margin-bottom: 10px !important;
+}
+
 .message-body span {
-    color: white !important;
+    color: blue !important;
 }
 
 /* This will select the messages indivdually. Do not fuck this one up */
 
 .profile {
     margin-bottom: 10px;
+    background-color: #DAF66E;
+    border-radius: 5px;
+    border: 3px black solid;
+    width: 100vw;
+    text-align: center;
 }
 
-.message-body {
-    background-color: #8700FF;
+.profile #username-span {
+    color: red !important;
+    font-size: 20px;
+}
+
+.profile #body-span {
+    font-size: 30px;
+}
+
+.message-map {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+}
+
+.profile .message-footer {
+    width: 210px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .delete {
     padding: initial;
     background-color: inherit;
     border: none;
+    position: fixed;
+    right: 1cm;
 }
 
 .delete:hover {
     color: red;
-    background-color: #007bff;
+    background-color: red;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px red;
+    transition: all 1s;
+    padding: 10px;
 }

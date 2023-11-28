@@ -20,10 +20,9 @@ const App = () => {
                     <Route path={"/about"} element={<Info />}></Route>
                     <Route path={"/login"} element={<Login />}></Route>
                     <Route path={"/"} element={<AuthenticationVerify />}>
-                        <Route path={"/"} element={<Message />}></Route>
+                        <Route path={"/message"} element={<Message />}></Route>
                     </Route>
                     <Route path={"/sign-up"} element={<Signup />}></Route>
-                    <Route path={"/message"} element={<Message />} />
                 </Routes>
             </AuthProvider>
         </Anchor>

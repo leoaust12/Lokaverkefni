@@ -1,0 +1,50 @@
+#logout-header {
+    position: fixed;
+    right: 0;
+    font-size: 24px;
+}
+
+#logout-header:hover {
+    box-shadow: 2px 2px 2px rgb(0,0,0);
+    transition: all 1s;
+}
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.Bar-Header {
+    background-color: blueviolet;
+    padding: 10px;
+    width: 100%;
+    font-size: xx-large;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px black solid;
+    margin-bottom: 10px;
+}
+
+.Bar-Header h1 {
+    color: white;
+    background-color: #5E00B1;
+    border: 2px black solid;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.Bar-Header #logout-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 1cm;
+}
+
+.Bar-Header h1 span {
+    color: yellow;
+    font-weight: bolder;
+    font-style: italic;
+}

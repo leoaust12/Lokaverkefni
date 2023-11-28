@@ -1,13 +1,17 @@
 import React, {useState, useEffect} from "react";
-import client, {COLLECTION_ID_MESSAGES, DATABASE_ID, databases} from "../../../../appwriteconfiguration";
-import { ID, Query } from "appwrite";
+import client, {account, COLLECTION_ID_MESSAGES, DATABASE_ID, databases} from "../../../../appwriteconfiguration";
+import { ID, Query, Role, Permission } from "appwrite";
 import "./room.css"
 import {Trash2} from "react-feather";
+import Header from "../../../Header/header";
+import {useAuth} from "../../../../utility/AuthContext";
 
 const Room = () => {
 
     const [messages, setMessages] = useState([]);
     const [messageBody, setMessageBody] = useState("");
+    const [messageAccount, setMessageAccount] = useState("");
+    const {user} = useAuth();
 
     useEffect(() => {
         getMessages();
@@ -41,14 +45,21 @@ const Room = () => {
         e.preventDefault(); // This will prevent the website from refreshing itself, as set by default
 
         let payload = {
-            body:messageBody
+            userId:user.$id,
+            userName:user.name,
+            body:messageBody,
         }
+
+        let permission = [
+            Permission.write(Role.user(user.$id))
+        ]
 
         let response = await databases.createDocument(
             DATABASE_ID,
             COLLECTION_ID_MESSAGES,
             ID.unique(),
-            payload
+            payload,
+            permission
         )
 
         console.log("Created: ", response)
@@ -56,6 +67,7 @@ const Room = () => {
 
 
         setMessageBody("");
+        setMessageAccount("")
     }
 
     const handleDeletes = async (message_Id) => {
@@ -80,29 +92,39 @@ const Room = () => {
     return(
         <main className={"container"}>
             <div className={"Room-container"}>
-
-
-
+                <Header />
                 <div className={"message-map"}>
                     {messages.map(message => (
                         <div key={message.$id} className={"Message-Wrap"}>
                             <div className={"profile"}>
-                                <span id={"userIcon"}>
-
-                                </span>
                                 <div className={"usernames"}>
+                                    <span id={"username-span"}>
+                                        <p>
+                                            {message?.userName ? (
+                                                <span>
+                                                    {message.userName}
+                                                </span>
+                                            ): (
+                                                <span>"Anonymous User"</span>
+                                            )}
+                                        </p>
+                                    </span>
+                                    <span className={"delete"}>
+                                         {message.$permissions.includes(`delete(\"user:${user.$id}\")`) && (
+                                             <Trash2 className="delete--btn" onClick={() => {handleDeletes(message.$id)}}/>
 
+                                         )}
+                                </span>
                                 </div>
                                 <div className={"message-body"}>
-                                    <span>
+                                    <span id={"body-span"}>
                                         {message.body}
                                     </span>
                                  </div>
+
                                 <div className={"message-footer"}>
                                     <small className={"timestamp-messages"}>{new Date(message.$createdAt).toLocaleString()}</small>
-                                    <span className={"delete"}>
-                                        <Trash2 onClick={() => {handleDeletes(message.$id)}}  />
-                                    </span>
+
                                 </div>
                             </div>
                         </div>
@@ -111,22 +133,16 @@ const Room = () => {
                 <div className={"textbox"}>
                     <form onSubmit={handleNewMessages} id={"message-form"}>
                         <div>
-                        <textarea
-                            required
-                            maxLength="400"
-                            placeholder="Insert a message"
-                            onChange={(e) => {setMessageBody(e.target.value)}}
-                            value={messageBody}>
-                        </textarea>
+                            <div className={"textbox"}>
+                                <input onChange={(e) => {setMessageBody(e.target.value)}} type={"text"} placeholder={"Speak"} />
+                            </div>
                         </div>
                         <div className={"buttons_rooms"}>
-                            <input id={"Submit-Button-Message"} type={"submit"} value={"Send"} />
+                            <button id={"room-submit"} type={"submit"} value={"submit"}>Submit</button>
                         </div>
                     </form>
                 </div>
-
                 <div>
-
                 </div>
             </div>
         </main>
