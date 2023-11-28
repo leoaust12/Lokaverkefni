@@ -4,6 +4,7 @@
     "appwrite": "^13.0.1",
     "axios": "^1.6.2",
     "react-chat-engine": "^1.11.28",
+    "react-feather": "^2.0.10",
     "react-helmet": "^6.1.0",
     "react-hook-form": "^7.47.0"
   },

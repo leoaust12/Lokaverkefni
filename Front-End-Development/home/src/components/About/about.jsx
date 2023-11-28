@@ -7,8 +7,8 @@ function About() {
         <div>
             <NavBar />
             <div className={"content"}>
-                <h3>Sitespeak is a free to use, open source website dedicated to fast communications without censorship
-                    Sitespeak is legally obligated to protect user data from third parties, making it one of the safest social media platforms in the world!
+                <h3>SiteSpeak is a free to use, open source website dedicated to fast communications without censorship
+                    SiteSpeak is legally obligated to protect user data from third parties, making it one of the safest social media platforms in the world!
                     Sign up today and join millions of people in a safe environment for  secure communications with friends, family and total strangers! Empower your voice, preserve your privacy and connect freely!
                 </h3>
                 <br />

@@ -4,17 +4,58 @@
     box-sizing: border-box;
 }
 
+textarea {
+    resize: none !important; /* This will prevent them being able to change the size of the text box. */
+    width: 400px;
+    height: 75px;
+    border-radius: 10px;
+    justify-content: left;
+    display: flex;
+    align-items: flex-start;
+}
+
 #message-form {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
+    justify-content: left;
     background-color: #007bff;
 }
 
+#Submit-Button-Message {
+    background-color: #5E00B1;
+    color: white;
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-bottom: auto;
+    padding: 4px;
+    text-align: center;
+}
+
 .message-footer small {
-    color: white !important;
+    color: black !important;
 }
 
 .message-body span {
     color: white !important;
+}
+
+/* This will select the messages indivdually. Do not fuck this one up */
+
+.profile {
+    margin-bottom: 10px;
+}
+
+.message-body {
+    background-color: #8700FF;
+}
+
+.delete {
+    padding: initial;
+    background-color: inherit;
+    border: none;
+}
+
+.delete:hover {
+    color: red;
+    background-color: #007bff;
 }

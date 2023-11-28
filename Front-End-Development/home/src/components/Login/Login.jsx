@@ -28,7 +28,7 @@ const Form = () => {
     };
 
     return(
-        <div>
+        <div className={"login-container"}>
             <NavBar />
             <div className={"login"}>
                 <h1 id={"advert"}>Login into your <span id={"blue"}>Site</span><span id={"yellow"}>Speak</span> account</h1>
