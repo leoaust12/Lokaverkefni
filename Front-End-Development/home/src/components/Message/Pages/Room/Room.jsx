@@ -99,6 +99,7 @@ const Room = () => {
                             <div className={"profile"}>
                                 <div className={"usernames"}>
                                     <span id={"username-span"}>
+                                        <h6>Username: </h6>
                                         <p>
                                             {message?.userName ? (
                                                 <span>

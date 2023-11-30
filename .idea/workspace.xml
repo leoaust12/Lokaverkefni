@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92e45e26-1afe-4c41-93db-869e7c149947" name="Changes" comment="" />
+    <list default="true" id="92e45e26-1afe-4c41-93db-869e7c149947" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Front-End-Development/home/src/components/Core/CSS/Loading.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front-End-Development/home/src/components/Login/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Front-End-Development/home/src/components/Login/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front-End-Development/home/src/components/Message/Pages/Room/Room.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Front-End-Development/home/src/components/Message/Pages/Room/Room.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front-End-Development/home/src/components/Message/Pages/Room/room.css" beforeDir="false" afterPath="$PROJECT_DIR$/Front-End-Development/home/src/components/Message/Pages/Room/room.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front-End-Development/home/src/utility/AuthContext.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Front-End-Development/home/src/utility/AuthContext.jsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,7 +23,6 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
       </list>
     </option>
@@ -48,13 +54,11 @@
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2023.2.2\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\2312052170\Documents\Lokaverkefni\Front-End-Development\home\src\utility" />
       <recent name="C:\Users\Notandi\Documents\GitHub\Lokaverkefni-Chat-App-1\Front-End-Development\home\src\components\Message\Pages\Room" />
     </key>
   </component>
@@ -69,11 +73,10 @@
       <workItem from="1701044073174" duration="4727000" />
       <workItem from="1701081260041" duration="1902000" />
       <workItem from="1701086639260" duration="2585000" />
-      <workItem from="1701172651890" duration="325000" />
-      <workItem from="1701173278789" duration="5790000" />
-      <workItem from="1701193381705" duration="18008000" />
-      <workItem from="1701212746399" duration="2906000" />
-      <workItem from="1701332508413" duration="2901000" />
+      <workItem from="1701250587147" duration="35000" />
+      <workItem from="1701250648645" duration="660000" />
+      <workItem from="1701251814834" duration="4083000" />
+      <workItem from="1701336388976" duration="2913000" />
     </task>
     <servers />
   </component>

@@ -25,7 +25,7 @@ const Form = () => {
         let value = e.target.value
 
         setCredentials({...credentials, [name]:value})
-        console.log(credentials) // This is only for testing purposes.
+         // console.log(credentials) // This is only for testing purposes. Disable by default!
     }
 
     return(

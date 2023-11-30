@@ -13,6 +13,7 @@
     min-height: 100vh; /* I cannot find another way to make the content stay in this background image other than these two. */
     max-height: 100%; /* I cannot find another way to make the content stay in this background image other than these two. */
     background-repeat: repeat;
+    width: 100%;
     background-position: center;
     z-index: -1;
     object-fit: cover;
@@ -22,7 +23,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 90%;
+    width: 100%;
     flex-wrap: wrap;
     flex: 1;
     flex-flow: column;
@@ -64,8 +65,9 @@
     background-color: #DAF66E;
     border-radius: 5px;
     border: 3px black solid;
-    width: 100vw;
-    height: 120px;
+    width: 98vw;
+    min-height: 120px;
+    max-height: 160px;
     text-align: center;
     flex-wrap: wrap;
     text-wrap: normal;
@@ -106,10 +108,12 @@
 
 .delete {
     padding: initial;
+    color: red;
     background-color: inherit;
     border: none;
     display: flex;
     justify-content: flex-end;
+    width: fit-content;
 }
 
 .delete:hover {
@@ -118,5 +122,5 @@
     border-radius: 10px;
     box-shadow: 4px 4px 4px red;
     transition: all 1s;
-    padding: 10px;
+    padding: 5px;
 }

@@ -2,6 +2,7 @@ import { createContext, useState, useEffect, useContext } from "react";
 import { account } from "../appwriteconfiguration";
 import { useNavigate } from "react-router-dom";
 import { ID} from 'appwrite';
+import "../components/Core/CSS/Loading.css"
 
 const AuthContext = createContext()
 
@@ -31,6 +32,7 @@ export const AuthProvider = ({children}) => {
         try{
             let response = await account.createEmailSession(credentials.email, credentials.password)
             let accountDetails = await account.get();
+            alert("Account is successfully logged in to our system. Give it a moment as it's trying to connect you to the page. Have a nice Speak.")
             setUser(accountDetails)
             navigate('/message')
         }catch(error){
@@ -40,6 +42,7 @@ export const AuthProvider = ({children}) => {
 
     const handleUserLogout = async () => {
         const response = await account.deleteSession('current');
+        alert("Logging out.")
         setUser(null)
     }
 
@@ -59,6 +62,7 @@ export const AuthProvider = ({children}) => {
 
             await account.createEmailSession(credentials.email, credentials.password1)
             let accountDetails = await account.get();
+            alert("Account registered. Please give us a moment while it's processing your data to the database.")
             setUser(accountDetails)
             navigate('/message')
         }catch(error){
@@ -75,7 +79,12 @@ export const AuthProvider = ({children}) => {
 
     return(
         <AuthContext.Provider value={contextData}>
-            {loading ? <p>Loading...</p> : children}
+            {loading ? <div className={"loading-screen"}>
+                <p id={"loading-login"}>Loading...</p>
+                <div className={"loading-wheel"}>
+                    {/* Leave this empty */}
+                </div>
+            </div> : children}
         </AuthContext.Provider>
     )
 }
