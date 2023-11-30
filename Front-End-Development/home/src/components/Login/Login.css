@@ -49,6 +49,7 @@ form {
 
 #advert {
     margin-bottom: 10px;
+    font-size: 43px;
 }
 
 .user {
@@ -58,7 +59,7 @@ form {
 /* Input */
 
 .login input:focus {
-    background-color: #007bff;
+    color: red;
     transition: all 1s;
     font-size: 20px;
     width: 390px;

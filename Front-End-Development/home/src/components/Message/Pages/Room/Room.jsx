@@ -130,7 +130,7 @@ const Room = () => {
                         </div>
                     ))}
                 </div>
-                <div className={"textbox"}>
+                <div className={"form-textbox"}>
                     <form onSubmit={handleNewMessages} id={"message-form"}>
                         <div>
                             <div className={"textbox"}>

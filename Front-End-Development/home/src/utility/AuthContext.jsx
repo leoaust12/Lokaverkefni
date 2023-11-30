@@ -43,7 +43,7 @@ export const AuthProvider = ({children}) => {
         setUser(null)
     }
 
-    const handleRegister = async (e, credentials) => {
+    const handleUserRegister = async (e, credentials) => {
         e.preventDefault()
         console.log('Handle Register triggered!', credentials)
 
@@ -70,7 +70,7 @@ export const AuthProvider = ({children}) => {
         user,
         handleUserLogin,
         handleUserLogout,
-        handleRegister
+        handleUserRegister
     }
 
     return(

@@ -9,7 +9,9 @@ const Header = () => {
         <div className={"Bar-Header"}>
             {user ? (
                 <div>
-                    <h1>Welcome: <span>{user.name}</span> to SiteSpeak</h1>
+                    <div>
+                        <h1>Welcome: <span>{user.name}</span> to SiteSpeak</h1>
+                    </div>
                     <LogOut id={"logout-header"} onClick={handleUserLogout} className={"header-link-logout"} />
                 </div>
             ): (
