@@ -9,7 +9,7 @@ import {useAuth} from "../../utility/AuthContext";
 
 const Signup = () => {
 
-    const {handleRegister} = useAuth();
+    const {handleUserRegister} = useAuth();
 
     const [credentials, setCredentials] = useState({
         name: "",
@@ -30,7 +30,7 @@ const Signup = () => {
         <div className={"signup-container"}>
             <NavBar />
             <div className={"signup-form"}>
-                <form onSubmit={(e) => {handleRegister(e, credentials)}} className={"all"}>
+                <form onSubmit={(e) => {handleUserRegister(e, credentials)}} className={"all"}>
                     <h1>Join the Revolution at <span id="Site">Site</span><span id={"speak"}>Speak</span></h1>
                     <div className={"field-wrap"}>
                         <label>Name:</label>

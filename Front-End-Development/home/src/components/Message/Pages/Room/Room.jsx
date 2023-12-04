@@ -93,13 +93,33 @@ const Room = () => {
         <main className={"container"}>
             <div className={"Room-container"}>
                 <Header />
+                <div className={"form-textbox"}>
+                <form onSubmit={handleNewMessages} id={"message-form"}>
+                    <div>
+                        <div className={"textbox"}>
+                            <textarea id={"speak-form-message"}
+                                      required
+                                      maxLength={"400"}
+                                      minLength={"1" /* This is to prevent any empty messages being able to send out as it could clog the web and the server */}
+                                      placeholder={"Speak"}
+                                      onChange={(e) => {setMessageBody(e.target.value)}}
+                                      value={messageBody}
+                            ></textarea>
+                        </div>
+                    </div>
+                    <div className={"buttons_rooms"}>
+                        <button id={"room-submit"} type={"submit"} value={"submit"}>Submit</button>
+                    </div>
+                </form>
+                    <br />
+            </div>
                 <div className={"message-map"}>
                     {messages.map(message => (
                         <div key={message.$id} className={"Message-Wrap"}>
                             <div className={"profile"}>
                                 <div className={"usernames"}>
-                                    <span id={"username-span"}>
-                                        <h6>Username: </h6>
+                                    <div id={"username-span"}>
+                                        <h5>Username: </h5>
                                         <p>
                                             {message?.userName ? (
                                                 <span>
@@ -109,13 +129,13 @@ const Room = () => {
                                                 <span>"Anonymous User"</span>
                                             )}
                                         </p>
-                                    </span>
-                                    <span className={"delete"}>
-                                         {message.$permissions.includes(`delete(\"user:${user.$id}\")`) && (
-                                             <Trash2 className="delete--btn" onClick={() => {handleDeletes(message.$id)}}/>
+                                    </div>
+                                    <div className={"delete"}>
+                                    {message.$permissions.includes(`delete(\"user:${user.$id}\")`) && (
+                                        <Trash2 className="delete--btn" onClick={() => {handleDeletes(message.$id)}}/>
+                                    )}
+                                </div>
 
-                                         )}
-                                </span>
                                 </div>
                                 <div className={"message-body"}>
                                     <span id={"body-span"}>
@@ -131,18 +151,7 @@ const Room = () => {
                         </div>
                     ))}
                 </div>
-                <div className={"form-textbox"}>
-                    <form onSubmit={handleNewMessages} id={"message-form"}>
-                        <div>
-                            <div className={"textbox"}>
-                                <input onChange={(e) => {setMessageBody(e.target.value)}} type={"text"} placeholder={"Speak"} />
-                            </div>
-                        </div>
-                        <div className={"buttons_rooms"}>
-                            <button id={"room-submit"} type={"submit"} value={"submit"}>Submit</button>
-                        </div>
-                    </form>
-                </div>
+
                 <div>
                 </div>
             </div>

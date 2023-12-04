@@ -31,9 +31,54 @@
 
 #message-form {
     display: flex;
-    flex-direction: row;
-    justify-content: left;
-    background-color: #007bff;
+    flex-direction: column;
+    min-width: 98vw;
+    max-width: 98%;
+    align-items: center;
+}
+
+#message-form #speak-form-message {
+    resize: none;
+    min-width: 97vw;
+    max-width: 97%;
+    min-height: 3vh;
+    max-height: 6vh;
+    padding: 10px;
+    box-sizing: content-box;
+    margin-top: 5px;
+    background-color: #BFBFC0;
+}
+
+#message-form #speak-form-message:hover {
+    background-color: lightyellow;
+    transition: background-color 1s;
+}
+
+#message-form #speak-form-message:focus {
+    color: darkblue;
+    font-size: 16px;
+    border-radius: 10px;
+    background-color: lightyellow;
+}
+
+#message-form button {
+    max-width: 40vw;
+    min-width: 100%;
+    padding: 10px;
+    height: 100%;
+    background-color: #5E00B1;
+    color: white;
+    box-shadow: none;
+    border: 1px black solid;
+    margin-bottom: 4px;
+    transition: all 1s;
+}
+
+#message-form button:hover {
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgb(0,0,0);
+    background-color: #8700FF;
+    transition: all 1s;
 }
 
 #Submit-Button-Message {
@@ -62,7 +107,7 @@
 /* This will select the messages indivdually. Do not fuck this one up */
 
 .profile {
-    background-color: #DAF66E;
+    background-color: #F6F6F9;
     border-radius: 5px;
     border: 3px black solid;
     width: 98vw;
@@ -77,9 +122,12 @@
     overflow-wrap: break-word;
 }
 
-.profile #username-span {
+.profile .usernames {
     color: red !important;
     font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .profile #body-span {
@@ -111,8 +159,8 @@
     color: red;
     background-color: inherit;
     border: none;
-    display: flex;
-    justify-content: flex-end;
+    position: absolute;
+    right: 20px;
     width: fit-content;
 }
 
