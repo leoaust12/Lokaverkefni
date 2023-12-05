@@ -2,10 +2,21 @@ import "./home.css";
 import Img from "../../assets/SiteSpeak.png";
 import "../Core/CSS/video.css";
 import Video from "../../assets/backgroundTest.mp4";
-import {Link} from "react-router-dom";
+import {useNavigate, Link} from "react-router-dom";
 import NavBar from "../Core/bar";
+import {useAuth} from "../../utility/AuthContext";
+import {useEffect} from "react";
 
 const Home = () => {
+    const {user} = useAuth();
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        if(user) {
+            navigate("/message")
+        }
+    }, []);
+
     return(
         <div>
             <NavBar />

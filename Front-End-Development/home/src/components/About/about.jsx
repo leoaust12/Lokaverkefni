@@ -1,8 +1,20 @@
 import drawing from "../../assets/drawing.png";
 import "./about.css"
 import NavBar from "../Core/bar";
+import {useAuth} from "../../utility/AuthContext";
+import {useEffect} from "react";
+import {useNavigate} from "react-router-dom";
 
 function About() {
+    const {user} = useAuth();
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        if(user) {
+            navigate("/message")
+        }
+    }, []);
+
     return(
         <div>
             <NavBar />

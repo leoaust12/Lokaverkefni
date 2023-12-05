@@ -1,15 +1,16 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { useState } from 'react';
 import axios from 'axios';
 import "./signup.css";
-import {Link} from "react-router-dom"
+import { useNavigate ,Link} from "react-router-dom"
 import NavBar from "../Core/bar";
 import {useAuth} from "../../utility/AuthContext";
 
 
 const Signup = () => {
 
-    const {handleUserRegister} = useAuth();
+    const {user, handleUserRegister} = useAuth()
+    const navigate = useNavigate();
 
     const [credentials, setCredentials] = useState({
         name: "",
@@ -17,6 +18,12 @@ const Signup = () => {
         password1: "",
         password2: ""
     })
+
+    useEffect(() => {
+        if(user) {
+            navigate("/message")
+        }
+    }, []);
 
     const handleInputChange = (e) => {
         let name = e.target.name
