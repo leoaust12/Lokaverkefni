@@ -32,7 +32,7 @@ export const AuthProvider = ({children}) => {
         try{
             let response = await account.createEmailSession(credentials.email, credentials.password)
             let accountDetails = await account.get();
-            alert("Account is successfully logged in to our system. Give it a moment as it's trying to connect you to the page. Have a nice Speak.")
+            alert("Account is successfully logged in to our system. Give it a moment as it's trying to connect you to the page.")
             setUser(accountDetails)
             navigate('/message')
         }catch(error){
