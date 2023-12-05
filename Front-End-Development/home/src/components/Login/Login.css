@@ -59,7 +59,6 @@ form {
 /* Input */
 
 .login input:focus {
-    color: red;
     transition: all 1s;
     font-size: 20px;
     width: 390px;
