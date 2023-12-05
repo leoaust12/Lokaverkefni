@@ -10,7 +10,7 @@ const Header = () => {
             {user ? (
                 <div>
                     <div>
-                        <h1>Welcome: <span>{user.name}</span> to SiteSpeak</h1>
+                        <h1>Welcome: <span>{user.name}</span> to <span id={"blue"}>Site</span><span id={"yellow"}>Speak</span></h1>
                     </div>
                     <LogOut id={"logout-header"} onClick={handleUserLogout} className={"header-link-logout"} />
                 </div>
