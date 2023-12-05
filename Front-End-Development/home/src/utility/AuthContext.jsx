@@ -80,7 +80,6 @@ export const AuthProvider = ({children}) => {
     return(
         <AuthContext.Provider value={contextData}>
             {loading ? <div className={"loading-screen"}>
-                <p id={"loading-login"}>Loading...</p>
                 <div className={"loading-wheel"}>
                     {/* Leave this empty */}
                 </div>

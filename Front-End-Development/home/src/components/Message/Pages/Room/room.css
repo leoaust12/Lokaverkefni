@@ -39,14 +39,21 @@
 
 #message-form #speak-form-message {
     resize: none;
+    font-size: large;
     min-width: 97vw;
     max-width: 97%;
-    min-height: 3vh;
-    max-height: 6vh;
+    min-height: 6vh;
+    max-height: 9vh;
     padding: 10px;
     box-sizing: content-box;
     margin-top: 5px;
     background-color: #BFBFC0;
+    border-radius: 10px;
+    transition: all 1s;
+    border: yellow 1px solid;
+    text-align: center;
+    text-align-all: center;
+    text-effect: engrave;
 }
 
 #message-form #speak-form-message:hover {
@@ -56,39 +63,32 @@
 
 #message-form #speak-form-message:focus {
     color: darkblue;
-    font-size: 16px;
+    font-size: 20px;
     border-radius: 10px;
     background-color: lightyellow;
 }
 
 #message-form button {
-    max-width: 40vw;
-    min-width: 100%;
+    min-width: 10vw;
+    max-width: 100%;
     padding: 10px;
     height: 100%;
+    font-size: 16px;
+    border-radius: 5px;
     background-color: #5E00B1;
     color: white;
     box-shadow: none;
+    margin-top: 5px;
     border: 1px black solid;
     margin-bottom: 4px;
     transition: all 1s;
 }
 
 #message-form button:hover {
-    border-radius: 5px;
+    border-radius: 15px;
     box-shadow: 2px 2px 2px rgb(0,0,0);
     background-color: #8700FF;
     transition: all 1s;
-}
-
-#Submit-Button-Message {
-    background-color: #5E00B1;
-    color: white;
-    margin-top: 20px;
-    margin-left: 5px;
-    margin-bottom: auto;
-    padding: 4px;
-    text-align: center;
 }
 
 
@@ -110,7 +110,8 @@
     background-color: #F6F6F9;
     border-radius: 5px;
     border: 3px black solid;
-    width: 98vw;
+    min-width: 98vw;
+    max-width: fit-content;
     min-height: 120px;
     max-height: 160px;
     text-align: center;

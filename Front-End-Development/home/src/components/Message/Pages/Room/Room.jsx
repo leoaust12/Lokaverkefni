@@ -7,6 +7,15 @@ import Header from "../../../Header/header";
 import {useAuth} from "../../../../utility/AuthContext";
 
 const Room = () => {
+    let i = 0;
+
+    // To prevent an endless loop of alert spams, this will be activated once. Once you log out of your account, the number will reset to 0.
+    while(i < 0) {
+        alert("Welcome to the chat Room. " +
+            "Feel free to do whatever you want, we do however recommend that you do not use your phone or split the screen. " +
+            "This was only developed for a full sized website");
+        i++;
+    }
 
     const [messages, setMessages] = useState([]);
     const [messageBody, setMessageBody] = useState("");
@@ -101,14 +110,14 @@ const Room = () => {
                                       required
                                       maxLength={"400"}
                                       minLength={"1" /* This is to prevent any empty messages being able to send out as it could clog the web and the server */}
-                                      placeholder={"Speak"}
+                                      placeholder={"Speak..."}
                                       onChange={(e) => {setMessageBody(e.target.value)}}
                                       value={messageBody}
                             ></textarea>
                         </div>
                     </div>
                     <div className={"buttons_rooms"}>
-                        <button id={"room-submit"} type={"submit"} value={"submit"}>Submit</button>
+                        <button id={"room-submit"} type={"submit"} value={"submit"}>Post</button>
                     </div>
                 </form>
                     <br />
@@ -119,7 +128,7 @@ const Room = () => {
                             <div className={"profile"}>
                                 <div className={"usernames"}>
                                     <div id={"username-span"}>
-                                        <h5>Username: </h5>
+                                        <h4><span id={"blue"}>User</span><span id={"blue"}>name:</span></h4>
                                         <p>
                                             {message?.userName ? (
                                                 <span>
@@ -144,7 +153,7 @@ const Room = () => {
                                  </div>
 
                                 <div className={"message-footer"}>
-                                    <small className={"timestamp-messages"}>{new Date(message.$createdAt).toLocaleString()}</small>
+                                    <small className={"timestamp-messages"}>Date & Time: {new Date(message.$createdAt).toLocaleString()}</small>
 
                                 </div>
                             </div>

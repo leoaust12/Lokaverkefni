@@ -37,15 +37,21 @@
 }
 
 .Bar-Header #logout-header {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    flex-direction: row;
-    top: 1cm;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    transition: all 1s;
+}
+
+.Bar-Header #logout-header:hover {
+    background-color: #8700FF;
+    border-radius: 7px;
+    box-shadow: 2px 2px 2px rgb(0,0,0);
+    transition: all 1s;
 }
 
 .Bar-Header h1 span {
     color: yellow;
-    font-weight: bolder;
+    font-weight: lighter;
     font-style: italic;
 }

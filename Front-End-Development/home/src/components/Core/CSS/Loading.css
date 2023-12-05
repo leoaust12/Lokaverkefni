@@ -2,19 +2,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 8cm;
+    margin-top: 11cm;
     flex-direction: column;
     margin-bottom: auto;
-}
-
-#loading-login {
-    color: black;
-    margin-bottom: 20px;
-    font-size: 50px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
 }
 
 /* Got help from here: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_loader2 */
@@ -24,8 +14,8 @@
     border-radius: 50%;
     border-top: 16px solid blue;
     border-bottom: 16px solid blue;
-    width: 160px;
-    height: 160px;
+    width: 120px;
+    height: 120px;
     -webkit-animation: spin 1s linear infinite;
     animation: spin 1s linear infinite;
 }
