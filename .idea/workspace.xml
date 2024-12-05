@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92e45e26-1afe-4c41-93db-869e7c149947" name="Changes" comment="" />
+    <list default="true" id="92e45e26-1afe-4c41-93db-869e7c149947" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -73,6 +75,14 @@
       <workItem from="1701685329348" duration="6744000" />
       <workItem from="1701776633546" duration="299000" />
       <workItem from="1701777872548" duration="4796000" />
+      <workItem from="1701808389542" duration="1479000" />
+      <workItem from="1705675469704" duration="1195000" />
+      <workItem from="1705755189087" duration="140000" />
+      <workItem from="1705798219725" duration="479000" />
+      <workItem from="1705835017374" duration="18000" />
+      <workItem from="1705939846449" duration="2000" />
+      <workItem from="1706119205907" duration="591000" />
+      <workItem from="1716988692554" duration="59000" />
     </task>
     <servers />
   </component>
@@ -88,7 +98,6 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/Front-End-Development/home/src/components/Signup/signup.jsx</url>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
